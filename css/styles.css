@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header{
+    background-color: #50acf7;
+}
+
+h1{
+    font-size: 3em;
+}
+
+nav{
+    display: grid;
+    max-height: 15vh;
+}
+
+.pentagon{
+    position: absolute;
+    height: 53px;
+    width: 54px;
+    background-color: #5555bb;
+    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    /*                       Rojo verde amarillo azul rosa */
+    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+    margin: 2px 0px 0px 3px
+}
+
+.nav-titulo{
+    justify-self: center;
+    align-items: center;
+}
+
+.mobile-menu{
+    align-items: center;
+    padding-left: 45vw;
+    width: 100%;
+}
+
+.boton{
+    display: grid;
+    justify-items: flex-end;
+}
+
+.btn .nav-menu-icon{
+    width: 5vw;
+}
+
+#offcanvasTop{
+    background-color: #50acf7;
+    min-height: 35vh;
+}
+
+.offcanvas-body{
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.offcanvas-body ul, .offcanvas-body a{
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+    justify-items: center;
+}
+
+
+.nav-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    --bs-nav-tabs-border-color: none; /* oculta el color gris por defecto del nav tabs */
+}
+
+main{
+    background-color: #45557c;
+    display: grid;
+}
+
+#carouselWithCaptions{
+    justify-self: center;
+    width: 65%;
+    border: 2px solid #232323;
+}
+
+footer {
+    background-color: #28485d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 10vh;
+}
+
+footer h4{
+    font-size: 1em;
+}
+
+.footer-ubicacion{
+    font-weight: bold;
+}
+
+.footer-titles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.social-media{
+    display: flex;
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    border: 2px solid #777777;
+    margin-right: 1vw;
+}
+
+.ig, .tw, .tk{
+    background-color: #eeeeee;
+}
+
+.tw{
+    position: relative;
+}
