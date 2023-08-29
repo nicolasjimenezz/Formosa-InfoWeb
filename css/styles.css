@@ -6,21 +6,21 @@
 
 header{
     background-color: #50acf7;
-}
-
-h1{
-    font-size: 3em;
-}
-
-nav{
     display: grid;
-    max-height: 15vh;
 }
 
-.pentagon{
+/* .pentagon{
     position: absolute;
     height: 53px;
     width: 54px;
+    background-color: #5555bb;
+    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+} */
+
+.pentagon{
+    position: absolute;
+    height: 3.3em;
+    width: 3.35em;
     background-color: #5555bb;
     clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
 }
@@ -38,46 +38,8 @@ nav{
     align-items: center;
 }
 
-.mobile-menu{
-    align-items: center;
-    padding-left: 45vw;
-    width: 100%;
-}
-
-.boton{
-    display: grid;
-    justify-items: flex-end;
-}
-
-.btn .nav-menu-icon{
-    width: 5vw;
-}
-
-#offcanvasTop{
-    background-color: #50acf7;
-    min-height: 35vh;
-}
-
-.offcanvas-body{
-    padding: 0;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.offcanvas-body ul, .offcanvas-body a{
-    color: #000000;
-    text-decoration: none;
-    list-style: none;
-    justify-items: center;
-}
-
-
-.nav-tabs{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    --bs-nav-tabs-border-color: none; /* oculta el color gris por defecto del nav tabs */
+h1{
+    font-size: 3em;
 }
 
 main{
