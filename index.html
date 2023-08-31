@@ -13,29 +13,51 @@
     <div class="row nav-titulo">
       <!-- logo/escudo -->
       <div class="col-3 logo-container">
-          <div class="pentagon"></div> <!-- Clip path para el logo -->
+          <div class="pentagon"></div> <!-- Clip path logo -->
           <img class="logo" src="./images/logo-escudo.jpg" alt="Logo escudo de Formosa">
       </div>
       <h1 class="col-9">Formosa</h1>
     </div>
     <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
-        <h3>Inicio</h3>
+      <div class="container-fluid container-fluid-personal">
+        <h3 class="titulo-mobile">Inicio</h3> <!-- CORRER H3 al medio -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="./pages/historia.html">Historia</a>
-            <a class="nav-link" href="./pages/mapa.html">Mapa</a>
-            <a class="nav-link" href="./pages/gastronomia.html">Gastronomia</a>
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          <div class="navbar-nav navbar-personal">
+            <a class="nav-link nav-link-personal activo" href="./index.html">Inicio</a>
+            <a class="nav-link nav-link-personal" href="./pages/historia.html">Historia</a>
+            <a class="nav-link nav-link-personal" href="./pages/mapa.html">Mapa</a>
+            <a class="nav-link nav-link-personal" href="./pages/gastronomia.html">Gastronomia</a>
+            <a class="nav-link nav-link-personal" href="./pages/contacto.html">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    <!-- DESKTOP GALLERY -->
+    <div class="galeria-desktop">
+      <figure class="caja-paisaje">
+        <img src="./images/index/1.jpg" alt="Imagen ciudad de Formosa">
+        <figcaption>Ciudad de Formosa desde la costanera</figcaption>
+      </figure>
+      <figure class="caja-paisaje">
+        <img src="./images/index/2.jpg" alt="Imagen del Bañado la Estrella">
+        <figcaption>Bañado la Estrella</figcaption>
+      </figure>
+      <figure class="caja-paisaje">
+        <img src="./images/index/3.jpg" alt="Imagen 2 Bañado la Estrella">
+        <figcaption>Bañado la Estrella</figcaption>
+      </figure>
+      <figure class="caja-paisaje">
+        <img src="./images/index/4.jpg" alt="Imagen Cruz del Norte de la ciudad de Formosa">
+        <figcaption>Cruz del Norte</figcaption>
+      </figure>
+    </div>
+
+    <!-- CAROUSEL MOBILE -->
     <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
@@ -71,12 +93,12 @@
       </a>
     </div>
   </main>
-  <footer> <!-- Usé flexbox para posicionar las cajas -->
-    <div class="footer-titles">
+  <footer id="foot" class="row">
+    <div class="col-6 footer-titles">
       <h4 class="footer-ubicacion">Formosa - República Argentina</h4>
       <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
     </div>
-    <div class="footer-links">
+    <div class="col-6 footer-links">
       <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="./images/fb.png"></a>
       <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="./images/ig.png"></a>
       <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="./images/tw1.1.png"></a>

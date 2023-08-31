@@ -1,21 +1,26 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     color: #000000;
+    font-family: Roboto-light;
 }
+
+/* HEADER - LOGO Y TITULO */
 
 header{
     background-color: #50acf7;
     display: grid;
 }
 
-/* .pentagon{
-    position: absolute;
-    height: 53px;
-    width: 54px;
-    background-color: #5555bb;
-    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
-} */
+.nav-titulo{
+    justify-self: center;
+    align-items: center;
+}
 
 .pentagon{
     position: absolute;
@@ -33,18 +38,64 @@ header{
     margin: 2px 0px 0px 3px
 }
 
-.nav-titulo{
-    justify-self: center;
-    align-items: center;
-}
-
 h1{
     font-size: 3em;
 }
 
+/* HEADER - NAVBAR */
+
+.navbar{
+    --bs-navbar-padding-x: 3;
+}
+
+.container-fluid-personal{
+    --bs-gutter-x: 0;
+}
+
+.nav-link-personal{
+    width: 20%;
+    border: 1px solid #45759c;
+    text-align: center;
+}
+
+.activo{
+    font-weight: 700;
+    background-color: #45557c;
+    border-bottom: none;
+}
+
+/* MAIN */
+
 main{
     background-color: #45557c;
     display: grid;
+    padding: 2.5vh;
+}
+
+.galeria-desktop{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.caja-paisaje{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja-paisaje img{
+    width: 45vw;
+    align-items: center;
+    align-content: center;
+    border: 3px solid #2c2e2c;
+    border-radius: 8px;
+}
+
+main figcaption{
+    border: 2px solid #28485d;
+    font-size: 0.9em;
+    border-radius: 5px;
 }
 
 #carouselWithCaptions{
@@ -53,12 +104,18 @@ main{
     border: 2px solid #232323;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #28485d;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     min-height: 10vh;
+}
+
+#foot{
+    --bs-gutter-x: 0;   /* para eliminar el gutter no deseado de bootstrap */
 }
 
 footer h4{
@@ -73,6 +130,7 @@ footer h4{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -80,7 +138,7 @@ footer h4{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social-media{
@@ -98,4 +156,37 @@ footer h4{
 
 .tw{
     position: relative;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:768px){
+    .titulo-mobile{
+        display: none;
+    }
+    .navbar-personal{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #carouselWithCaptions{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .galeria-desktop{
+        display: none;
+    }
+    .navbar-personal{
+        align-items: center;
+    }
+    .nav-link-personal{
+        width: 100%;
+    }
+    .activo{
+        display: none;
+    }
+    .footer-links{
+        width: 100%;
+    }
 }
