@@ -15,6 +15,7 @@
 header{
     background-color: #50acf7;
     display: grid;
+    min-height: 15dvh;
 }
 
 .nav-titulo{
@@ -85,7 +86,7 @@ main{
 }
 
 .caja-paisaje img{
-    width: 45vw;
+    width: 45dvw;
     align-items: center;
     align-content: center;
     border: 3px solid #2c2e2c;
@@ -99,6 +100,7 @@ main figcaption{
 }
 
 #carouselWithCaptions{
+    display: none;
     justify-self: center;
     width: 65%;
     border: 2px solid #232323;
@@ -111,7 +113,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 10vh;
+    height: 15dvh;
 }
 
 #foot{
@@ -147,7 +149,7 @@ footer h4{
     width: 48px;
     border-radius: 48px;
     border: 2px solid #777777;
-    margin-right: 1vw;
+    margin-right: 1dvw;
 }
 
 .ig, .tw, .tk{
@@ -174,9 +176,6 @@ footer h4{
 }
 
 @media screen and (max-width:768px){
-    .galeria-desktop{
-        display: none;
-    }
     .navbar-personal{
         align-items: center;
     }
@@ -185,6 +184,23 @@ footer h4{
     }
     .activo{
         display: none;
+    } 
+    .galeria-desktop{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .caja-paisaje{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-paisaje img{
+        width: 85dvw;
+    }
+    footer{
+        height: fit-content;
+        padding: 1em;
     }
     .footer-links{
         width: 100%;
