@@ -82,7 +82,8 @@ main{
 .caja-paisaje{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caja-paisaje img{
@@ -160,9 +161,57 @@ footer h4{
     position: relative;
 }
 
-/* MEDIA QUERIES */
+/* PAGINA CONTACTO */
+
+.contacto-main{
+    justify-items: center;
+}
+
+.contacto{
+    display: flex;
+    background-color: #3a3b4d;
+    border: 2px solid #2a2c24;
+    border-radius: 8px;
+    margin-bottom: 2.5dvh;
+    width: 85%;
+}
+
+.contactenos{
+    text-align: center;
+}
+
+.contacto div, .contacto form{
+    width: 100%;
+}
+
+.contacto h3{
+    font-size: 2.5em;
+    font-family: sans-serif;
+}
+
+.contacto-container-input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5em 0;
+}
+
+.contacto-input{
+    display: block;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0.25em 0.4em 4px #232423;
+    border-radius: 6px;
+}
+
+.input-enviar{
+    margin: 0.5em 0;
+}
+
+/* MEDIA QUERIES DESKTOP*/
 
 @media screen and (min-width:768px){
+    /* INDEX */
     .titulo-mobile{
         display: none;
     }
@@ -175,7 +224,10 @@ footer h4{
     }
 }
 
+/* MEDIA QUERIES - MOBILE*/
+
 @media screen and (max-width:768px){
+    /* INDEX */
     .navbar-personal{
         align-items: center;
     }
@@ -201,8 +253,27 @@ footer h4{
     footer{
         height: fit-content;
         padding: 1em;
+        text-align: center;
     }
     .footer-links{
         width: 100%;
     }
+
+    /* MEDIA QUERIES - CONTACTO*/
+    .contacto{
+        flex-wrap: wrap;
+    }
 }
+
+@media screen and (max-width:480px){
+    .contacto{
+        font-size: 0.8em;
+    }
+    .contacto h3{
+        font-size: 1.5em;
+    }
+    .input-mensaje{
+        max-height: 12dvh;
+    }
+}
+
