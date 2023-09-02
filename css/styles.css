@@ -73,10 +73,8 @@ main{
     padding: 2.5vh;
 }
 
-.galeria-desktop{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+.galeria-mobile{
+    display: none;
 }
 
 .caja-paisaje{
@@ -101,7 +99,6 @@ main figcaption{
 }
 
 #carouselWithCaptions{
-    display: none;
     justify-self: center;
     width: 65%;
     border: 2px solid #232323;
@@ -219,9 +216,6 @@ footer h4{
         width: 100%;
         justify-content: space-around;
     }
-    #carouselWithCaptions{
-        display: none;
-    }
 }
 
 /* MEDIA QUERIES - MOBILE*/
@@ -236,8 +230,12 @@ footer h4{
     }
     .activo{
         display: none;
-    } 
-    .galeria-desktop{
+    }
+    #carouselWithCaptions{
+        display: none;
+    }
+    .galeria-mobile{
+        display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
