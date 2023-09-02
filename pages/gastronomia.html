@@ -3,26 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/escudo-formosa.png" type="image/x-icon">
     <title>Gastronomia</title>
-</head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>    
 <body>
-    <main>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./historia.html">Historia</a></li>
-            <li><a href="./mapa.html">Mapa</a></li>
-            <li><a href="./gastronomia.html">Gastronomia</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+        <div class="row nav-titulo">
+          <!-- logo/escudo -->
+          <div class="col-3 logo-container">
+              <div class="pentagon"></div> <!-- Clip path logo -->
+              <img class="logo" src="../images/logo-escudo.jpg" alt="Logo escudo de Formosa">
+          </div>
+          <h1 class="col-9">Formosa</h1>
+        </div>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid container-fluid-personal">
+            <h3 class="titulo-mobile">contacto</h3> <!-- CORRER H3 al medio -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-personal">
+                <a class="nav-link nav-link-personal" href="../index.html">Inicio</a>
+                <a class="nav-link nav-link-personal" href="./historia.html">Historia</a>
+                <a class="nav-link nav-link-personal" href="./mapa.html">Mapa</a>
+                <a class="nav-link nav-link-personal activo" href="./gastronomia.html">Gastronomia</a>
+                <a class="nav-link nav-link-personal" href="./contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main class="gastronomia-main">
+        <figure class="contacto">
+            <img src="../images/gastronomia/sopa-paraguaya.png" class="foto-contenida" alt="Sopa paraguaya">
+            <div>
+                <h3 class="titulo-interno">Sopa paraguaya</h3>
+                <div class="mapa-texto">
+                    <p>A pesar de su nombre, es un pastel sólido salado a base de harina de maíz, cebolla, queso fresco y huevos. Se suele consumir en las celebraciones de cumpleaños, asado o reuniones entre amigos.</p>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="contacto">
+            
+            <div>
+                <h3 class="titulo-interno">Chipa guazú</h3>
+                <div class="mapa-texto">
+                    <p>El chipá guazú es un plato típico de Paraguay y el norte argentino, reconocido por su sabor único y su aspecto irresistible. Se trata de una especie de pastel salado hecho principalmente a base de maíz y queso fresco, con una textura suave y cremosa, que sorprende por su sabor agridulce.</p>
+                </div>
+            </div>
+            <img src="../images/gastronomia/chipa-guazu-png.jpg" class="foto-contenida" alt="Chipa guazú">
+        </figure>
+
+        <figure class="contacto">
+            <img src="../images/gastronomia/mbeju.png" class="foto-contenida" alt="Mbeju">
+            <div>
+                <h3 class="titulo-interno">Mbeju</h3>
+                <div class="mapa-texto">
+                    <p>El mbeju es una especie de panqueque de almidón de mandioca y queso fresco. Es herencia de la cocina mestiza cario guaraní-española que ocurrió en la ciudad de Asunción, es tradicional de la gastronomía de Paraguay, también es consumida en el nordeste argentino</p>
+                </div>
+            </div>
+        </figure>
     </main>
-    <footer>
-        <h4>Formosa - República Argentina</h4>
-        <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
-        <a href="https://www.facebook.com/MinTurFormosa" target=_blank>facebook</a>
-        <a href="https://www.instagram.com/minturformosa/" target=_blank>Instagram</a>
-        <a href="https://www.twitter.com/minturformosa" target=_blank>Twitter</a>
-        <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank>Tik Tok</a>
-    </footer>
+    <footer id="foot" class="row">
+        <div class="col-6 footer-titles">
+          <h4 class="footer-ubicacion">Formosa - República Argentina</h4>
+          <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
+        </div>
+        <div class="col-6 footer-links">
+          <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="../images/fb.png"></a>
+          <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="../images/ig.png"></a>
+          <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="../images/tw1.1.png"></a>
+          <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank><img class="social-media tk" src="../images/tk.png"></a>
+        </div>
+      </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

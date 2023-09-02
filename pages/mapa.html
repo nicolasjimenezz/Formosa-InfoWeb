@@ -3,26 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/escudo-formosa.png" type="image/x-icon">
     <title>Mapa</title>
-</head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>    
 <body>
-    <main>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./historia.html">Historia</a></li>
-            <li><a href="./mapa.html">Mapa</a></li>
-            <li><a href="./gastronomia.html">Gastronomia</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+        <div class="row nav-titulo">
+          <!-- logo/escudo -->
+          <div class="col-3 logo-container">
+              <div class="pentagon"></div> <!-- Clip path logo -->
+              <img class="logo" src="../images/logo-escudo.jpg" alt="Logo escudo de Formosa">
+          </div>
+          <h1 class="col-9">Formosa</h1>
+        </div>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid container-fluid-personal">
+            <h3 class="titulo-mobile">contacto</h3> <!-- CORRER H3 al medio -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-personal">
+                <a class="nav-link nav-link-personal" href="../index.html">Inicio</a>
+                <a class="nav-link nav-link-personal" href="./historia.html">Historia</a>
+                <a class="nav-link nav-link-personal activo" href="./mapa.html">Mapa</a>
+                <a class="nav-link nav-link-personal" href="./gastronomia.html">Gastronomia</a>
+                <a class="nav-link nav-link-personal" href="./contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main class="mapa-main">
+        <figure class="caja-paisaje-mapa">
+            <img src="../images/mapa/mapa-localidades.png" alt="Mapa de localidades formoseñas">
+            <div>
+                <h3 class="titulo-interno">Mapa provincial</h3>
+                <div class="mapa-texto">
+                    <p>Formosa es una de las veintitrés provincias de la República Argentina. Su capital es la homónima <strong>Formosa</strong>. </p>
+                    <p> La provincia se encuentra dividida en 9 departamentos, los cuales se dividen a su vez en distritos catastrales, e incluyen áreas de gobierno local, repartidas en 27 municipios, 10 comisiones de fomento y 18 juntas vecinales provinciales.</p>
+                    <p>La provincia limita al norte con el río Pilcomayo que la separa de Paraguay, al este con el río Paraguay que también la separa del Paraguay, al sur con los ríos Bermejo y Teuco que la separan de Chaco, y al oeste con Salta, mediante un meridiano.</p>
+                </div>
+            </div>
+        </figure>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57292.05614548787!2d-58.19496985000001!3d-26.172155949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5e488cf4f05%3A0xbcaebe65a1bae72!2sFormosa!5e0!3m2!1ses-419!2sar!4v1693686851068!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
-    <footer>
-        <h4>Formosa - República Argentina</h4>
-        <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
-        <a href="https://www.facebook.com/MinTurFormosa" target=_blank>facebook</a>
-        <a href="https://www.instagram.com/minturformosa/" target=_blank>Instagram</a>
-        <a href="https://www.twitter.com/minturformosa" target=_blank>Twitter</a>
-        <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank>Tik Tok</a>
-    </footer>
+    <footer id="foot" class="row">
+        <div class="col-6 footer-titles">
+          <h4 class="footer-ubicacion">Formosa - República Argentina</h4>
+          <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
+        </div>
+        <div class="col-6 footer-links">
+          <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="../images/fb.png"></a>
+          <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="../images/ig.png"></a>
+          <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="../images/tw1.1.png"></a>
+          <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank><img class="social-media tk" src="../images/tk.png"></a>
+        </div>
+      </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

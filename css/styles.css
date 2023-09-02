@@ -71,6 +71,7 @@ main{
     background-color: #45557c;
     display: grid;
     padding: 2.5vh;
+    justify-items: center;
 }
 
 .galeria-mobile{
@@ -82,6 +83,7 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .caja-paisaje img{
@@ -102,6 +104,12 @@ main figcaption{
     justify-self: center;
     width: 65%;
     border: 2px solid #232323;
+}
+
+.titulo-interno{
+    font-size: 2.5em;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -158,6 +166,37 @@ footer h4{
     position: relative;
 }
 
+
+/* PAGINA MAPA */
+
+.caja-paisaje-mapa{
+    display: flex;
+}
+
+.caja-paisaje-mapa img{
+    width: 35dvw;
+    align-items: center;
+    align-content: center;
+    border: 3px solid #2c2e2c;
+    border-radius: 8px;
+}
+
+.mapa-texto{
+    padding: 0 2em;
+    font-size: 1em;
+}
+
+.google-map{
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGINA GASTRONOMIA */
+
+.foto-contenida{
+    width: 35dvw;
+}
+
 /* PAGINA CONTACTO */
 
 .contacto-main{
@@ -173,17 +212,8 @@ footer h4{
     width: 85%;
 }
 
-.contactenos{
-    text-align: center;
-}
-
 .contacto div, .contacto form{
     width: 100%;
-}
-
-.contacto h3{
-    font-size: 2.5em;
-    font-family: sans-serif;
 }
 
 .contacto-container-input{

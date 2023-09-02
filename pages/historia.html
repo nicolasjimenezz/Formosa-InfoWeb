@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/escudo-formosa.png" type="image/x-icon">
     <title>Historia</title>
-</head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>    
 <body>
-    <main>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./historia.html">Historia</a></li>
-            <li><a href="./mapa.html">Mapa</a></li>
-            <li><a href="./gastronomia.html">Gastronomia</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+        <div class="row nav-titulo">
+          <!-- logo/escudo -->
+          <div class="col-3 logo-container">
+              <div class="pentagon"></div> <!-- Clip path logo -->
+              <img class="logo" src="../images/logo-escudo.jpg" alt="Logo escudo de Formosa">
+          </div>
+          <h1 class="col-9">Formosa</h1>
+        </div>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid container-fluid-personal">
+            <h3 class="titulo-mobile">contacto</h3> <!-- CORRER H3 al medio -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-personal">
+                <a class="nav-link nav-link-personal" href="../index.html">Inicio</a>
+                <a class="nav-link nav-link-personal activo" href="./historia.html">Historia</a>
+                <a class="nav-link nav-link-personal" href="./mapa.html">Mapa</a>
+                <a class="nav-link nav-link-personal" href="./gastronomia.html">Gastronomia</a>
+                <a class="nav-link nav-link-personal" href="./contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main class="historia-main">
+        <div></div>
+        <figure class="caja-paisaje">
+            <img src="../images/historia/bandera-formosa.png" alt="Imagen de la bandera provincial de Formosa">
+            <h3 class="titulo-interno">Bandera provincial</h3>
+            <p>El paño partido en tres campos representa el Cono Sur abrazado por los dos Océanos, expresado en los colores celeste y blanco de nuestra bandera nacional. </p>
+            <p>La guirnalda de laureles que cruza todo el paño sintetiza la ubicación geográfica atravesada por el trópico de Capricornio en sentido longitudinal.</p>
+            <p>La estructura institucional se sintetiza en nueve estrellas dispuestas en el círculo a la altura del Trópico, componentes ya presentes en el escudo provincial.</p>
+        </figure>
+
+        <figure class="caja-paisaje">
+            <img src="../images/historia/escudo-formosa.png" alt="Imagen del escudo provincial de Formosa">
+            <h3 class="titulo-interno">Escudo provincial</h3>
+            <p>Consta de un campo poligonal irregular de ocho lados, dividido en dos cuarteles. El cuartel superior es de color azul con un capullo de algodón, símbolo de un porvenir productivo e industrial, coronado por nueve estrellas dispuestas simétricamente, que representan los departamentos provinciales.</p>
+            <p>En el cuartel inferior (debajo de la línea divisoria) dos vigorosas manos entrelazadas simbolizan la unión de todos sus hijos. En lo alto un sol naciente con rayos en disposición de engranaje, simboliza la nueva provincia y en la parte inferior dos ramas de laurel.</p>
+        </figure>
+
     </main>
-    <footer>
-        <h4>Formosa - República Argentina</h4>
-        <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
-        <a href="https://www.facebook.com/MinTurFormosa" target=_blank>facebook</a>
-        <a href="https://www.instagram.com/minturformosa/" target=_blank>Instagram</a>
-        <a href="https://www.twitter.com/minturformosa" target=_blank>Twitter</a>
-        <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank>Tik Tok</a>
-    </footer>
+    <footer id="foot" class="row">
+        <div class="col-6 footer-titles">
+          <h4 class="footer-ubicacion">Formosa - República Argentina</h4>
+          <h4>Copyright &copy; 2023 - Nicolás Jiménez</h4>
+        </div>
+        <div class="col-6 footer-links">
+          <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="../images/fb.png"></a>
+          <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="../images/ig.png"></a>
+          <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="../images/tw1.1.png"></a>
+          <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank><img class="social-media tk" src="../images/tk.png"></a>
+        </div>
+      </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
