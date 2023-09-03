@@ -199,8 +199,17 @@ footer h4{
 
 /* PAGINA CONTACTO */
 
-.contacto-main{
-    justify-items: center;
+.contenedor-multiuso{
+    display: flex;
+    background-color: #3a3b4d;
+    border: 2px solid #2a2c24;
+    border-radius: 8px;
+    margin-bottom: 2.5dvh;
+    width: 85%;
+}
+
+.titulo-interno-contacto{
+    text-decoration-line: underline;
 }
 
 .contacto{
