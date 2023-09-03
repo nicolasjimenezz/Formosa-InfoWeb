@@ -49,8 +49,9 @@ h1{
     --bs-navbar-padding-x: 3;
 }
 
-.container-fluid-personal{
+#container-fluid-personal{
     --bs-gutter-x: 0;
+    justify-content: flex-end;
 }
 
 .nav-link-personal{
@@ -260,9 +261,10 @@ footer h4{
 
 @media screen and (min-width:768px){
     /* INDEX */
-    .titulo-mobile{
+    .titulo-mobile-actual{
         display: none;
     }
+
     .navbar-personal{
         width: 100%;
         justify-content: space-around;
@@ -272,40 +274,56 @@ footer h4{
 /* MEDIA QUERIES - MOBILE*/
 
 @media screen and (max-width:768px){
-    /* INDEX */
+    .titulo-mobile-actual{
+        top: 10vh;
+        position: absolute;
+        width: 100dvw;
+        text-align: center;
+    }
+
     .navbar-personal{
         align-items: center;
     }
+
     .nav-link-personal{
         width: 100%;
     }
+
     .activo{
         display: none;
     }
+
+    footer{
+        height: fit-content;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+    }
+
+    /* INDEX */
+
     #carouselWithCaptions{
         display: none;
     }
+
     .galeria-mobile{
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
+
     .caja-paisaje{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
+
     .caja-paisaje img{
         width: 85dvw;
-    }
-    footer{
-        height: fit-content;
-        padding: 1em;
-        text-align: center;
-    }
-    .footer-links{
-        width: 100%;
     }
 
     /* MEDIA QUERIES - CONTACTO*/
@@ -318,9 +336,11 @@ footer h4{
     .contenedor-multiuso{
         font-size: 0.8em;
     }
+
     .titulo-interno-contacto{
         font-size: 1.5em;
     }
+
     .input-mensaje{
         max-height: 12dvh;
     }
