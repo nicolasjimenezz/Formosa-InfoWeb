@@ -188,7 +188,10 @@ footer h4{
 
 .google-map{
     display: flex;
-    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 1px;
+    margin-bottom: 2.5dvh;
 }
 
 /* PAGINA GASTRONOMIA */
@@ -208,20 +211,29 @@ footer h4{
     width: 85%;
 }
 
+.contenedor-multiuso-imagen{
+    width: 35dvw;
+    max-height: 35dvw;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #606060;
+}
+
+.contenedor-multiuso-historia{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .titulo-interno-contacto{
     text-decoration-line: underline;
 }
 
-.contacto{
-    display: flex;
-    background-color: #3a3b4d;
-    border: 2px solid #2a2c24;
-    border-radius: 8px;
-    margin-bottom: 2.5dvh;
-    width: 85%;
+.contacto-p{
+    margin: 0 0.5em;
 }
 
-.contacto div, .contacto form{
+.contenedor-multiuso div, .contenedor-multiuso form{
     width: 100%;
 }
 
@@ -297,16 +309,16 @@ footer h4{
     }
 
     /* MEDIA QUERIES - CONTACTO*/
-    .contacto{
+    .contenedor-multiuso{
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width:480px){
-    .contacto{
+    .contenedor-multiuso{
         font-size: 0.8em;
     }
-    .contacto h3{
+    .titulo-interno-contacto{
         font-size: 1.5em;
     }
     .input-mensaje{
