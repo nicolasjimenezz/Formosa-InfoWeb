@@ -78,6 +78,10 @@
             animation-name: mover-parrafo;
             animation-duration: 1.5s;
         }
+        .contenedor-multiuso-github{
+            flex-wrap: nowrap;
+            width: 65dvw;
+        }
     }
     
     footer{
@@ -106,6 +110,10 @@
         }
         .input-mensaje{
             max-height: 12dvh;
+        }
+        .contenedor-multiuso-github{
+            flex-wrap: wrap;
+            text-align: center;
         }
     }
 }

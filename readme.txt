@@ -12,4 +12,4 @@ Sólo agregué animaciones a navbar y a la página contacto porque me parecia ex
 Cambié el nombre visible de la página "historia" a "símbolos". Pero veo innecesario cambiar todas las etiquetas e información invisible al usuario. Es una mala prática?
 
 Ideas a futuro:
-Agregar logo+link a github EJ: https://michalsnik.github.io/aos/
+---

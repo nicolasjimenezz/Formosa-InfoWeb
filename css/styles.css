@@ -128,7 +128,7 @@ main .titulo-interno {
   font-family: sans-serif;
   text-align: center;
 }
-main .contenedor-multiuso {
+main .contenedor-multiuso, main .contenedor-multiuso-github {
   display: flex;
   justify-content: center;
   background-image: radial-gradient(#427cbc, #446697);
@@ -184,7 +184,7 @@ main .contacto-p {
   margin: 0 0.5em;
   text-align: center;
 }
-main .contenedor-multiuso div, main .contenedor-multiuso form {
+main .contenedor-multiuso div, main .contenedor-multiuso-github div, main .contenedor-multiuso form, main .contenedor-multiuso-github form {
   width: 100%;
 }
 main .contacto-container-input {
@@ -215,6 +215,14 @@ main .input-enviar .contacto-boton-enviar {
 }
 main .input-enviar .contacto-boton-enviar:active {
   box-shadow: 0.125em 0.2em 2px 0 #232423;
+}
+main .contenedor-multiuso-github {
+  width: 40dvw;
+  align-items: center;
+}
+main .contenedor-multiuso-github .github-logo {
+  width: 10dvw;
+  max-width: 100px;
 }
 
 /* FOOTER */
@@ -314,10 +322,10 @@ footer .tw {
   main .caja-paisaje img {
     width: 85dvw;
   }
-  main .contenedor-multiuso .bandera-formosa {
+  main .contenedor-multiuso .bandera-formosa, main .contenedor-multiuso-github .bandera-formosa {
     width: 65dvw;
   }
-  main .contenedor-multiuso .escudo-formosa {
+  main .contenedor-multiuso .escudo-formosa, main .contenedor-multiuso-github .escudo-formosa {
     height: 50dvw;
     width: 50dvw;
   }
@@ -334,12 +342,16 @@ footer .tw {
   main .texto-gastronomia-2 {
     order: 2;
   }
-  main .contenedor-multiuso {
+  main .contenedor-multiuso, main .contenedor-multiuso-github {
     flex-wrap: wrap;
   }
   main .contacto-p {
     animation-name: mover-parrafo;
     animation-duration: 1.5s;
+  }
+  main .contenedor-multiuso-github {
+    flex-wrap: nowrap;
+    width: 65dvw;
   }
   footer {
     height: fit-content;
@@ -355,7 +367,7 @@ footer .tw {
     /* MEDIA QUERIES - MAPA*/
     /*MEDIA QUERIES - CONTACTO*/
   }
-  main .contenedor-multiuso {
+  main .contenedor-multiuso, main .contenedor-multiuso-github {
     font-size: 0.8em;
   }
   main iframe {
@@ -367,6 +379,10 @@ footer .tw {
   }
   main .input-mensaje {
     max-height: 12dvh;
+  }
+  main .contenedor-multiuso-github {
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 @keyframes cambiar-colores {

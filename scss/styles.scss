@@ -227,6 +227,15 @@ main{
             }
         }
     }
+    .contenedor-multiuso-github{
+        @extend .contenedor-multiuso;
+        width: 40dvw;
+        align-items: center;
+        .github-logo{
+            width: 10dvw;
+            max-width: 100px;
+        }
+    }
 }
 
 /* FOOTER */
