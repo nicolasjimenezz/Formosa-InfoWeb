@@ -1,0 +1,12 @@
+{
+  "name": "formosawebpage",
+  "version": "1.0.0",
+  "description": "Idea: \r Hacer una página de presentación de mi provincia/ciudad para cualquier persona que no la conozca y busque tener una idea rápida de como es.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@import "./partials/colores.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $color-letra;
+    font-family: Roboto-light;
+}
+
+header{
+    background-color: $color-header;
+    display: grid;
+    // min-height: 15dvh;
+    .nav-titulo{
+        justify-self: center;
+        align-items: center;
+    }
+    .pentagon{
+        position: absolute;
+        height: 3.3em;
+        width: 3.38em;
+        background-color: $color-fondo-logo;
+        clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+    }
+    .logo {
+        width: 3em;
+        height: 3em;
+        clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%); /*Rojo verde amarillo azul rosa */
+        margin: 2px 0px 0px 3px
+    }
+    h1{
+        font-size: 3em;
+    }
+    .titulo-mobile-invisible, .titulo-mobile-actual{
+        display: none;
+    }
+    
+    /* NAV */
+    .navbar-personal{  //Debería estar dentro del nav, pero si lo pongo adentro no lo toma
+        --bs-navbar-padding-y: 0rem;
+    }
+    nav{
+        #container-fluid-personal{
+            --bs-gutter-x: 0;
+            justify-content: space-between;
+            .titulo-mobile-invisible{
+                color: $color-header;
+            }
+        }
+        .navbar-toggler-personal{
+            margin-bottom: 1dvh;
+        }
+        .navbar-nav-personal{
+            width: 100%;
+            justify-content: space-around;
+        }
+        .nav-link-personal{
+            width: 20%;
+            border: 1px solid $color-borde-nav-link-personal; //#45759c
+            text-align: center;
+        }
+        .activo{
+            font-weight: 700;
+            background-color: $color-main;
+            border-bottom: none;
+        }
+        .no-activo{
+            background-image: $color-link-hover;
+            background-position:center;
+            background-size:500% 500%;
+            &:hover{
+                font-weight: 500;
+                background-size:50% 50%;
+                transform: scale(1.08);
+                transition: all 0.35s;
+            }
+        }
+    }
+}
+
+/* INDEX */
+main{
+    background-color: $color-main;
+    display: grid;
+    padding: 2.5vh;
+    justify-items: center;
+    .galeria-mobile{
+        display: none;
+    }
+    .caja-paisaje{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 45dvw;
+            align-items: center;
+            align-content: center;
+            border: 2px solid $color-borde-caja;
+            border-radius: 8px;
+        }
+    }
+    figcaption{
+        border: 2px solid #28485d;
+        font-size: 0.9em;
+        border-radius: 5px;
+    }
+    #carouselWithCaptions{
+        justify-self: center;
+        width: 65%;
+        border: 2px solid $color-borde-caja;
+        border-radius: 4px;
+        li{
+            list-style: none; //Para borrar los números por defecto en el carousel
+        }
+    }
+    .titulo-interno{
+        font-size: 2.5em;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    /* INDEX-HISTORIA-MAPA-GASTRONOMIA-CONTACTO */
+    .contenedor-multiuso{
+        display: flex;
+        justify-content: center;
+        background-image: $color-contenedor-multiuso;
+        border: 2px solid $color-borde-caja;
+        border-radius: 8px;
+        margin-bottom: 2.5dvh;
+        padding: 0.8em;
+        width: 85%;
+    }    
+
+    /*PAGINA HISTORIA */
+    .contenedor-multiuso-historia{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 35dvw;
+            border: 2px solid $color-borde-caja;
+            border-radius: 6px;
+            background-image: radial-gradient(#888888,#444444);
+        }
+    }
+
+    /* PAGINA MAPA */
+    .contenedor-multiuso-mapa{
+        img{
+            width: 35dvw;
+            max-height: 35dvw;
+            border: 2px solid #2c2e2c; 
+            border-radius: 6px;
+            background-color: #606060;
+        }
+    }
+    .mapa-texto{
+        padding: 0 2em;
+        font-size: 1em;
+    }
+    .google-map{
+        display: flex; // Para que ocupe toda la caja
+        border: 1px solid $color-borde-caja;
+        border-radius: 4px;
+        padding: 1px;
+        margin-bottom: 2.5dvh;
+        justify-content: center;
+    }
+
+    /* PAGINA GASTRONOMIA */
+    .contenedor-multiuso-gastronomia{
+        img{
+            width: 35dvw;
+            max-height: 35dvw;
+            border: 2px solid $color-borde-caja;
+            border-radius: 6px;
+            background-image: radial-gradient(#888888,#444444);
+        }
+    }
+
+    /* PAGINA CONTACTO */
+    .titulo-interno-contacto{
+        text-decoration-line: underline;
+        animation-name: cambiar-colores;
+        animation-duration: 1s;
+    }
+    .contacto-p{
+        margin: 0 0.5em;
+        text-align: center;
+    }
+    .contenedor-multiuso div, .contenedor-multiuso form{
+        width: 100%;
+    }
+    .contacto-container-input{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0.5em 0;
+    }
+    .contacto-input{
+        display: block;
+        width: 80%;
+        text-align: left;
+        box-shadow: $box-shadow-input $color-sombra-input;
+        border: 2px solid $color-borde-caja;
+        border-radius: 6px;
+        &:focus{
+            background-color: $color-fondo-input;
+        }
+    }
+    .input-enviar{
+        margin: 0.5em 0;
+        .contacto-boton-enviar{
+            box-shadow: $box-shadow-input $color-sombra-input;
+            border: 2px solid $color-borde-caja;
+            border-radius: 6px;
+            padding: 0 0.2dvw;
+            &:active{
+                box-shadow: 0.125em 0.2em 2px 0 $color-sombra-input;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer{
+    --bs-gutter-x: 0;   /* para eliminar el gutter no deseado de bootstrap */
+}
+footer{
+    background-color: $color-footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 15dvh;
+    h4{
+        font-size: 1em;
+    }
+    .footer-ubicacion{
+        font-weight: bold;
+    }
+    .footer-titles{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .social-media{
+        display: flex;
+        height: 48px;
+        width: 48px;
+        border-radius: 48px;
+        border: 2px solid $color-social-media;
+        margin-right: 1dvw;
+        &:hover{
+            filter: brightness(1.25);
+        }
+    }
+    .ig, .tw, .tk{
+        background-color: #eeeeee;
+    }
+    .tw{
+        position: relative;
+    }
+}
+
+@import "./partials/queries";
+@import "./partials/keyframes";

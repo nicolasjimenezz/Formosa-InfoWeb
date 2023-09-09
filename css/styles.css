@@ -1,348 +1,421 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+/*HEADER*/
+/*MAIN*/
+/*FOOTER*/
+/*PAGINA CONTACTO*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: Roboto-light;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    font-family: Roboto-light;
+header {
+  background-color: #408cd7;
+  display: grid;
+  /* NAV */
+}
+header .nav-titulo {
+  justify-self: center;
+  align-items: center;
+}
+header .pentagon {
+  position: absolute;
+  height: 3.3em;
+  width: 3.38em;
+  background-color: #5555bb;
+  clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+}
+header .logo {
+  width: 3em;
+  height: 3em;
+  clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%); /*Rojo verde amarillo azul rosa */
+  margin: 2px 0px 0px 3px;
+}
+header h1 {
+  font-size: 3em;
+}
+header .titulo-mobile-invisible, header .titulo-mobile-actual {
+  display: none;
+}
+header .navbar-personal {
+  --bs-navbar-padding-y: 0rem;
+}
+header nav #container-fluid-personal {
+  --bs-gutter-x: 0;
+  justify-content: space-between;
+}
+header nav #container-fluid-personal .titulo-mobile-invisible {
+  color: #408cd7;
+}
+header nav .navbar-toggler-personal {
+  margin-bottom: 1dvh;
+}
+header nav .navbar-nav-personal {
+  width: 100%;
+  justify-content: space-around;
+}
+header nav .nav-link-personal {
+  width: 20%;
+  border: 1px solid #45759c;
+  text-align: center;
+}
+header nav .activo {
+  font-weight: 700;
+  background-color: #45557c;
+  border-bottom: none;
+}
+header nav .no-activo {
+  background-image: radial-gradient(circle, #408cd7 0%, #80bcdc 100%);
+  background-position: center;
+  background-size: 500% 500%;
+}
+header nav .no-activo:hover {
+  font-weight: 500;
+  background-size: 50% 50%;
+  transform: scale(1.08);
+  transition: all 0.35s;
 }
 
-/* HEADER - LOGO Y TITULO */
-
-header{
-    background-color: #50acf7;
-    display: grid;
-    min-height: 15dvh;
+/* INDEX */
+main {
+  background-color: #45557c;
+  display: grid;
+  padding: 2.5vh;
+  justify-items: center;
+  /* INDEX-HISTORIA-MAPA-GASTRONOMIA-CONTACTO */
+  /*PAGINA HISTORIA */
+  /* PAGINA MAPA */
+  /* PAGINA GASTRONOMIA */
+  /* PAGINA CONTACTO */
 }
-
-.nav-titulo{
-    justify-self: center;
-    align-items: center;
+main .galeria-mobile {
+  display: none;
 }
-
-.pentagon{
-    position: absolute;
-    height: 3.3em;
-    width: 3.35em;
-    background-color: #5555bb;
-    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+main .caja-paisaje {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
-.logo {
-    width: 48px;
-    height: 48px;
-    /*                       Rojo verde amarillo azul rosa */
-    clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
-    margin: 2px 0px 0px 3px
+main .caja-paisaje img {
+  width: 45dvw;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #2c2e2c;
+  border-radius: 8px;
 }
-
-h1{
-    font-size: 3em;
+main figcaption {
+  border: 2px solid #28485d;
+  font-size: 0.9em;
+  border-radius: 5px;
 }
-
-/* HEADER - NAVBAR */
-
-.navbar{
-    --bs-navbar-padding-x: 3;
+main #carouselWithCaptions {
+  justify-self: center;
+  width: 65%;
+  border: 2px solid #2c2e2c;
+  border-radius: 4px;
 }
-
-#container-fluid-personal{
-    --bs-gutter-x: 0;
-    justify-content: flex-end;
+main #carouselWithCaptions li {
+  list-style: none;
 }
-
-.nav-link-personal{
-    width: 20%;
-    border: 1px solid #45759c;
-    text-align: center;
+main .titulo-interno {
+  font-size: 2.5em;
+  font-family: sans-serif;
+  text-align: center;
 }
-
-.activo{
-    font-weight: 700;
-    background-color: #45557c;
-    border-bottom: none;
+main .contenedor-multiuso {
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(#427cbc, #446697);
+  border: 2px solid #2c2e2c;
+  border-radius: 8px;
+  margin-bottom: 2.5dvh;
+  padding: 0.8em;
+  width: 85%;
 }
-
-/* MAIN */
-
-main{
-    background-color: #45557c;
-    display: grid;
-    padding: 2.5vh;
-    justify-items: center;
+main .contenedor-multiuso-historia {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
-.galeria-mobile{
-    display: none;
+main .contenedor-multiuso-historia img {
+  width: 35dvw;
+  border: 2px solid #2c2e2c;
+  border-radius: 6px;
+  background-image: radial-gradient(#888888, #444444);
 }
-
-.caja-paisaje{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+main .contenedor-multiuso-mapa img {
+  width: 35dvw;
+  max-height: 35dvw;
+  border: 2px solid #2c2e2c;
+  border-radius: 6px;
+  background-color: #606060;
 }
-
-.caja-paisaje img{
-    width: 45dvw;
-    align-items: center;
-    align-content: center;
-    border: 3px solid #2c2e2c;
-    border-radius: 8px;
+main .mapa-texto {
+  padding: 0 2em;
+  font-size: 1em;
 }
-
-main figcaption{
-    border: 2px solid #28485d;
-    font-size: 0.9em;
-    border-radius: 5px;
+main .google-map {
+  display: flex;
+  border: 1px solid #2c2e2c;
+  border-radius: 4px;
+  padding: 1px;
+  margin-bottom: 2.5dvh;
+  justify-content: center;
 }
-
-#carouselWithCaptions{
-    justify-self: center;
-    width: 65%;
-    border: 2px solid #232323;
+main .contenedor-multiuso-gastronomia img {
+  width: 35dvw;
+  max-height: 35dvw;
+  border: 2px solid #2c2e2c;
+  border-radius: 6px;
+  background-image: radial-gradient(#888888, #444444);
 }
-
-.titulo-interno{
-    font-size: 2.5em;
-    font-family: sans-serif;
-    text-align: center;
+main .titulo-interno-contacto {
+  text-decoration-line: underline;
+  animation-name: cambiar-colores;
+  animation-duration: 1s;
+}
+main .contacto-p {
+  margin: 0 0.5em;
+  text-align: center;
+}
+main .contenedor-multiuso div, main .contenedor-multiuso form {
+  width: 100%;
+}
+main .contacto-container-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+main .contacto-input {
+  display: block;
+  width: 80%;
+  text-align: left;
+  box-shadow: 0.25em 0.4em 4px #232423;
+  border: 2px solid #2c2e2c;
+  border-radius: 6px;
+}
+main .contacto-input:focus {
+  background-color: #e8e4d4;
+}
+main .input-enviar {
+  margin: 0.5em 0;
+}
+main .input-enviar .contacto-boton-enviar {
+  box-shadow: 0.25em 0.4em 4px #232423;
+  border: 2px solid #2c2e2c;
+  border-radius: 6px;
+  padding: 0 0.2dvw;
+}
+main .input-enviar .contacto-boton-enviar:active {
+  box-shadow: 0.125em 0.2em 2px 0 #232423;
 }
 
 /* FOOTER */
+.footer {
+  --bs-gutter-x: 0; /* para eliminar el gutter no deseado de bootstrap */
+}
 
 footer {
-    background-color: #28485d;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 15dvh;
+  background-color: #28485d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 15dvh;
+}
+footer h4 {
+  font-size: 1em;
+}
+footer .footer-ubicacion {
+  font-weight: bold;
+}
+footer .footer-titles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+footer .social-media {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
+  border: 2px solid #777777;
+  margin-right: 1dvw;
+}
+footer .social-media:hover {
+  filter: brightness(1.25);
+}
+footer .ig, footer .tw, footer .tk {
+  background-color: #eeeeee;
+}
+footer .tw {
+  position: relative;
 }
 
-#foot{
-    --bs-gutter-x: 0;   /* para eliminar el gutter no deseado de bootstrap */
+/*MEDIA QUERIES - DESKTOP*/
+@media screen and (min-width: 768px) {
+  /*MEDIA QUERIES - CONTACTO*/
+  .contacto-p {
+    animation-name: rebote-parrafo;
+    animation-duration: 1.5s;
+  }
 }
-
-footer h4{
-    font-size: 1em;
-}
-
-.footer-ubicacion{
-    font-weight: bold;
-}
-
-.footer-titles{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-links{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.social-media{
-    display: flex;
-    height: 48px;
-    width: 48px;
-    border-radius: 48px;
-    border: 2px solid #777777;
-    margin-right: 1dvw;
-}
-
-.ig, .tw, .tk{
-    background-color: #eeeeee;
-}
-
-.tw{
-    position: relative;
-}
-
-
-/* PAGINA MAPA */
-
-.caja-paisaje-mapa{
-    display: flex;
-}
-
-.caja-paisaje-mapa img{
-    width: 35dvw;
-    align-items: center;
-    align-content: center;
-    border: 3px solid #2c2e2c;
-    border-radius: 8px;
-}
-
-.mapa-texto{
-    padding: 0 2em;
-    font-size: 1em;
-}
-
-.google-map{
-    display: flex;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    padding: 1px;
-    margin-bottom: 2.5dvh;
-}
-
-/* PAGINA GASTRONOMIA */
-
-.foto-contenida{
-    width: 35dvw;
-}
-
-/* PAGINA CONTACTO */
-
-.contenedor-multiuso{
-    display: flex;
-    background-color: #3a3b4d;
-    border: 2px solid #2a2c24;
-    border-radius: 8px;
-    margin-bottom: 2.5dvh;
-    width: 85%;
-}
-
-.contenedor-multiuso-imagen{
-    width: 35dvw;
-    max-height: 35dvw;
-    border: 2px solid #000000;
-    border-radius: 6px;
-    background-color: #606060;
-}
-
-.contenedor-multiuso-historia{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.titulo-interno-contacto{
-    text-decoration-line: underline;
-}
-
-.contacto-p{
-    margin: 0 0.5em;
-}
-
-.contenedor-multiuso div, .contenedor-multiuso form{
-    width: 100%;
-}
-
-.contacto-container-input{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5em 0;
-}
-
-.contacto-input{
+/*MEDIA QUERIES - MOBILE*/
+@media screen and (max-width: 767px) {
+  header nav .titulo-mobile-invisible, header nav .titulo-mobile-actual {
     display: block;
-    width: 80%;
-    text-align: left;
-    box-shadow: 0.25em 0.4em 4px #232423;
-    border-radius: 6px;
+  }
+  header nav .navbar-nav-personal {
+    align-items: center;
+  }
+  header nav .nav-link-personal {
+    width: 100%;
+  }
+  header nav .activo {
+    display: none;
+  }
+  main {
+    /*MEDIA QUERIES - HISTORIA */
+    /* MEDIA QUERIES - MAPA*/
+    /*MEDIA QUERIES - GASTRONOMIA*/
+    /*MEDIA QUERIES - CONTACTO*/
+  }
+  main .galeria-mobile {
+    display: block;
+  }
+  main #carouselWithCaptions {
+    display: none;
+  }
+  main .galeria-mobile {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+  main .caja-paisaje {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .caja-paisaje img {
+    width: 85dvw;
+  }
+  main .contenedor-multiuso .bandera-formosa {
+    width: 65dvw;
+  }
+  main .contenedor-multiuso .escudo-formosa {
+    height: 50dvw;
+    width: 50dvw;
+  }
+  main .contenedor-multiuso-mapa {
+    text-align: center;
+  }
+  main iframe {
+    width: 350px;
+    height: 300px;
+  }
+  main .foto-gastronomia-2 {
+    order: 1;
+  }
+  main .texto-gastronomia-2 {
+    order: 2;
+  }
+  main .contenedor-multiuso {
+    flex-wrap: wrap;
+  }
+  main .contacto-p {
+    animation-name: mover-parrafo;
+    animation-duration: 1.5s;
+  }
+  footer {
+    height: fit-content;
+    padding: 1em;
+    text-align: center;
+  }
+  footer .footer-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    /* MEDIA QUERIES - MAPA*/
+    /*MEDIA QUERIES - CONTACTO*/
+  }
+  main .contenedor-multiuso {
+    font-size: 0.8em;
+  }
+  main iframe {
+    width: 240px;
+    height: 240px;
+  }
+  main .titulo-interno-contacto {
+    font-size: 1.5em;
+  }
+  main .input-mensaje {
+    max-height: 12dvh;
+  }
+}
+@keyframes cambiar-colores {
+  0% {
+    color: #ff6666;
+  }
+  25% {
+    color: #bb4444;
+  }
+  50% {
+    color: #663333;
+  }
+  75% {
+    color: #331515;
+  }
+  100% {
+    color: #000000;
+  }
+}
+@keyframes rebote-parrafo {
+  0% {
+    translate: 0;
+  }
+  25% {
+    translate: 0 30dvh;
+  }
+  50% {
+    translate: 0 10dvh;
+  }
+  85% {
+    translate: 0 30dvh;
+  }
+  100% {
+    translate: 0;
+  }
+}
+@keyframes mover-parrafo {
+  0% {
+    translate: 0dvw;
+  }
+  33% {
+    translate: 2dvh;
+  }
+  66% {
+    translate: -2dvh;
+  }
+  100% {
+    translate: 0;
+  }
 }
 
-.input-enviar{
-    margin: 0.5em 0;
-}
-
-/* MEDIA QUERIES DESKTOP*/
-
-@media screen and (min-width:768px){
-    /* INDEX */
-    .titulo-mobile-actual{
-        display: none;
-    }
-
-    .navbar-personal{
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-/* MEDIA QUERIES - MOBILE*/
-
-@media screen and (max-width:768px){
-    .titulo-mobile-actual{
-        top: 10vh;
-        position: absolute;
-        width: 100dvw;
-        text-align: center;
-    }
-
-    .navbar-personal{
-        align-items: center;
-    }
-
-    .nav-link-personal{
-        width: 100%;
-    }
-
-    .activo{
-        display: none;
-    }
-
-    footer{
-        height: fit-content;
-        padding: 1em;
-        text-align: center;
-    }
-
-    .footer-links{
-        width: 100%;
-    }
-
-    /* INDEX */
-
-    #carouselWithCaptions{
-        display: none;
-    }
-
-    .galeria-mobile{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-    }
-
-    .caja-paisaje{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .caja-paisaje img{
-        width: 85dvw;
-    }
-
-    /* MEDIA QUERIES - CONTACTO*/
-    .contenedor-multiuso{
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width:480px){
-    .contenedor-multiuso{
-        font-size: 0.8em;
-    }
-
-    .titulo-interno-contacto{
-        font-size: 1.5em;
-    }
-
-    .input-mensaje{
-        max-height: 12dvh;
-    }
-}
-
+/*# sourceMappingURL=styles.css.map */

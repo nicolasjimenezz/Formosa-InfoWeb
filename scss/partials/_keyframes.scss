@@ -1,0 +1,50 @@
+@keyframes cambiar-colores{
+    0%{
+        color: #ff6666;
+    }
+    25%{
+        color: #bb4444;
+    }
+    50%{
+        color: #663333;
+    }
+    75%{
+        color: #331515;
+    }
+    100%{
+        color: $color-letra;
+    }
+}
+
+@keyframes rebote-parrafo{
+    0%{
+        translate: 0;
+    }
+    25%{
+        translate: 0 30dvh;
+    }
+    50%{
+        translate: 0 10dvh;
+    }
+    85%{
+        translate: 0 30dvh;
+    }
+    100%{
+        translate: 0;
+    }
+}
+
+@keyframes mover-parrafo{
+    0%{
+        translate: 0dvw;
+    }
+    33%{
+        translate: 2dvh;
+    }
+    66%{
+        translate: -2dvh;
+    }
+    100%{
+        translate: 0;
+    }
+}

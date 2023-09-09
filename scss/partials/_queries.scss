@@ -1,0 +1,111 @@
+/*MEDIA QUERIES - DESKTOP*/
+@media screen and (min-width:768px){
+    /*MEDIA QUERIES - CONTACTO*/
+    .contacto-p{
+        animation-name: rebote-parrafo;
+        animation-duration: 1.5s;
+    }
+}
+
+/*MEDIA QUERIES - MOBILE*/
+@media screen and (max-width:767px){
+    header{
+        nav{
+            .titulo-mobile-invisible, .titulo-mobile-actual{
+                display: block;
+            }
+            .navbar-nav-personal{
+                align-items: center;
+            }
+            .nav-link-personal{
+                width: 100%;
+            }
+            .activo{
+                display: none;
+            }
+        }
+    }
+    
+    main{
+        .galeria-mobile{
+            display: block;
+        }
+        #carouselWithCaptions{
+            display: none;
+        }
+        .galeria-mobile{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+        }
+        .caja-paisaje{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        .caja-paisaje img{
+            width: 85dvw;
+        }
+        /*MEDIA QUERIES - HISTORIA */
+        .contenedor-multiuso .bandera-formosa{
+            width: 65dvw;
+        }
+        .contenedor-multiuso .escudo-formosa{
+            height: 50dvw;
+            width: 50dvw;
+        }
+        /* MEDIA QUERIES - MAPA*/
+        .contenedor-multiuso-mapa{
+            text-align: center;
+        }
+        iframe{
+            width: 350px;
+            height: 300px;
+        }
+        /*MEDIA QUERIES - GASTRONOMIA*/
+        .foto-gastronomia-2{
+            order: 1;
+        }
+        .texto-gastronomia-2{
+            order: 2;
+        }
+        /*MEDIA QUERIES - CONTACTO*/
+        .contenedor-multiuso{
+            flex-wrap: wrap;
+        }
+        .contacto-p{
+            animation-name: mover-parrafo;
+            animation-duration: 1.5s;
+        }
+    }
+    
+    footer{
+        height: fit-content;
+        padding: 1em;
+        text-align: center;
+        .footer-links{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    main{
+        .contenedor-multiuso{
+            font-size: 0.8em;
+        }
+        /* MEDIA QUERIES - MAPA*/
+        iframe{
+            width: 240px;
+            height: 240px;
+        }
+        /*MEDIA QUERIES - CONTACTO*/
+        .titulo-interno-contacto{
+            font-size: 1.5em;
+        }
+        .input-mensaje{
+            max-height: 12dvh;
+        }
+    }
+}

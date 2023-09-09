@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="Pagina informativa de la provincia-ciudad de Formosa, Argentina"> -->
+  <!-- <meta name="keywords" content="Formosa, Formosa provincia, Formosa ciudad, Formosa argentina, Bañado la estrella"> -->
   <link rel="shortcut icon" href="./images/escudo-formosa.png" type="image/x-icon">
-  <title>Inicio</title>
+  <title>Formosa tierra hermosa</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -13,24 +16,25 @@
     <div class="row nav-titulo">
       <!-- logo/escudo -->
       <div class="col-3 logo-container">
-          <div class="pentagon"></div> <!-- Clip path logo -->
-          <img class="logo" src="./images/logo-escudo.jpg" alt="Logo escudo de Formosa">
+        <div class="pentagon"></div> <!-- Clip path logo -->
+        <img class="logo" src="./images/logo-escudo.jpg" alt="Logo escudo de Formosa">
       </div>
       <h1 class="col-9">Formosa</h1>
     </div>
-    <h3 class="titulo-mobile-actual">Inicio</h3>
-    <nav class="navbar navbar-expand-md">
+    <nav id="navbar-personal" class="navbar navbar-expand-md navbar-personal">
       <div id="container-fluid-personal" class="container-fluid"> <!-- ID para ganar en especificidad al estilo por defecto -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <h3 class="titulo-mobile-invisible">Histor</h3> <!-- Usado para centrar el título mobile en el menu hamburguesa-->
+        <h3 class="titulo-mobile-actual">Inicio</h3>
+        <button class="navbar-toggler navbar-toggler-personal" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav navbar-personal">
+          <div class="navbar-nav navbar-nav-personal">
             <a class="nav-link nav-link-personal activo" href="./index.html">Inicio</a>
-            <a class="nav-link nav-link-personal" href="./pages/historia.html">Historia</a>
-            <a class="nav-link nav-link-personal" href="./pages/mapa.html">Mapa</a>
-            <a class="nav-link nav-link-personal" href="./pages/gastronomia.html">Gastronomia</a>
-            <a class="nav-link nav-link-personal" href="./pages/contacto.html">Contacto</a>
+            <a class="nav-link nav-link-personal no-activo" href="./pages/historia.html">Símbolos</a>
+            <a class="nav-link nav-link-personal no-activo" href="./pages/mapa.html">Mapa</a>
+            <a class="nav-link nav-link-personal no-activo" href="./pages/gastronomia.html">Gastronomia</a>
+            <a class="nav-link nav-link-personal no-activo" href="./pages/contacto.html">Contacto</a>
           </div>
         </div>
       </div>
@@ -56,7 +60,6 @@
         <figcaption>Cruz del Norte</figcaption>
       </figure>
     </div>
-
     <!-- MOBILE GALLERY -->
     <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
@@ -93,16 +96,16 @@
       </a>
     </div>
   </main>
-  <footer id="foot" class="row">
+  <footer class="row footer">
     <div class="col-6 footer-titles">
       <h4 class="footer-ubicacion">Formosa - República Argentina</h4>
       <h4>2023 - Nicolás Jiménez</h4>
     </div>
     <div class="col-6 footer-links">
-      <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="./images/fb.png"></a>
-      <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="./images/ig.png"></a>
-      <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="./images/tw1.1.png"></a>
-      <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank><img class="social-media tk" src="./images/tk.png"></a>
+      <a href="https://www.facebook.com/MinTurFormosa" target=_blank><img class="social-media fb" src="./images/fb.png" alt="Imagen link facebook"></a>
+      <a href="https://www.instagram.com/minturformosa/" target=_blank><img class="social-media ig" src="./images/ig.png" alt="Imagen link instagram"></a>
+      <a href="https://www.twitter.com/minturformosa" target=_blank><img class="social-media tw" src="./images/tw1.1.png" alt="Imagen link twitter"></a>
+      <a href="https://www.tiktok.com/@formosahermosaoficial" target=_blank><img class="social-media tk" src="./images/tk.png" alt="Imagen link tiktok"></a>
     </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>

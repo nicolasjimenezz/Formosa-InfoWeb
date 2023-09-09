@@ -1,0 +1,23 @@
+$color-letra:#000000;
+
+/*HEADER*/
+$color-header:#50acf7;
+$color-header: #408cd7;
+$color-fondo-logo:#5555bb;
+$color-borde-nav-link-personal:#45759c;
+$color-link-hover: radial-gradient(circle, $color-header 0%, #80bcdc 100%);
+
+/*MAIN*/
+$color-main:#45557c;
+$color-borde-caja:#2c2e2c;
+$color-contenedor-multiuso:radial-gradient(mix($color-header,$color-main,70%),mix($color-header,$color-main,30%));
+
+/*FOOTER*/
+$color-footer:#28485d;
+$color-social-media: #777777;
+
+/*PAGINA CONTACTO*/
+$color-sombra-input: #232423;
+$color-fondo-input: #d2d0c8;
+$color-fondo-input: #e8e4d4;
+$box-shadow-input: 0.25em 0.4em 4px;
