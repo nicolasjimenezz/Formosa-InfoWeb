@@ -14,6 +14,9 @@
             .titulo-mobile-invisible, .titulo-mobile-actual{
                 display: block;
             }
+            .navbar-toggler-icon-personal{
+                filter: brightness(0); //Para hacer que el boton sea negro
+            }
             .navbar-nav-personal{
                 align-items: center;
             }

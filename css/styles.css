@@ -219,6 +219,12 @@ main .input-enviar .contacto-boton-enviar:active {
 main .contenedor-multiuso-github {
   width: 40dvw;
   align-items: center;
+  text-align: center;
+}
+main .contenedor-multiuso-github p {
+  padding: 0 2em;
+  font-size: 1em;
+  text-align: center;
 }
 main .contenedor-multiuso-github .github-logo {
   width: 10dvw;
@@ -286,6 +292,9 @@ footer .tw {
 @media screen and (max-width: 767px) {
   header nav .titulo-mobile-invisible, header nav .titulo-mobile-actual {
     display: block;
+  }
+  header nav .navbar-toggler-icon-personal {
+    filter: brightness(0);
   }
   header nav .navbar-nav-personal {
     align-items: center;

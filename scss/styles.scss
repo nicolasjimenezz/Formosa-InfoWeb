@@ -231,6 +231,12 @@ main{
         @extend .contenedor-multiuso;
         width: 40dvw;
         align-items: center;
+        text-align: center;
+        p{
+            padding: 0 2em;
+            font-size: 1em;
+            text-align: center;
+        }
         .github-logo{
             width: 10dvw;
             max-width: 100px;
