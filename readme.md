@@ -21,3 +21,4 @@ Dudas a resolver:
 *El hecho de que bootstrap use divs en lugar de h1,h2,h3, afecta mucho al SEO?
 *tenemos que usar git ignore para la carpeta de SCSS? o también debemos subirla a GitHub?
 *Buscar más ejemplos del lenguaje de SASS (IF, for etc)
+*Por qué una imagen .webp me terminó pesando más que una .png? la convertí mal?
