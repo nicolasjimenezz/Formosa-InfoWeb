@@ -176,9 +176,8 @@ main .contenedor-multiuso-gastronomia img {
   background-image: radial-gradient(#888888, #444444);
 }
 main .titulo-interno-contacto {
+  margin-top: 5dvh;
   text-decoration-line: underline;
-  animation-name: cambiar-colores;
-  animation-duration: 1s;
 }
 main .contacto-p {
   margin: 0 0.5em;
@@ -283,9 +282,8 @@ footer .tw {
 /*MEDIA QUERIES - DESKTOP*/
 @media screen and (min-width: 768px) {
   /*MEDIA QUERIES - CONTACTO*/
-  .contacto-p {
-    animation-name: rebote-parrafo;
-    animation-duration: 1.5s;
+  .titulo-interno-contacto {
+    animation-duration: 2s;
   }
 }
 /*MEDIA QUERIES - MOBILE*/
@@ -306,7 +304,7 @@ footer .tw {
     display: none;
   }
   main {
-    /*MEDIA QUERIES - HISTORIA */
+    /*MEDIA QUERIES - SIMBOLOS */
     /* MEDIA QUERIES - MAPA*/
     /*MEDIA QUERIES - GASTRONOMIA*/
     /*MEDIA QUERIES - CONTACTO*/
@@ -354,9 +352,12 @@ footer .tw {
   main .contenedor-multiuso, main .contenedor-multiuso-github {
     flex-wrap: wrap;
   }
-  main .contacto-p {
-    animation-name: mover-parrafo;
+  main .titulo-interno-contacto {
+    margin: 1dvh;
+    padding: 0;
+    animation-name: cambiar-colores, mover-titulo-mobile;
     animation-duration: 1.5s;
+    animation-iteration-count: 2;
   }
   main .contenedor-multiuso-github {
     flex-wrap: nowrap;
@@ -394,6 +395,50 @@ footer .tw {
     text-align: center;
   }
 }
+/*MEDIA QUERIES - EXCLUSIVO ANIMACION*/
+@media screen and (width: 1366px) {
+  /*MEDIA QUERIES - CONTACTO*/
+  .contenedor-multiuso-contacto {
+    align-items: center;
+  }
+  .titulo-interno-contacto {
+    padding-left: 25%;
+    animation-name: mover-titulo-exclusivo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+@keyframes mover-titulo-exclusivo {
+  0% {
+    translate: 5%;
+    color: green;
+  }
+  15% {
+    translate: 25% -200%;
+    color: blue;
+  }
+  25% {
+    translate: 10% -350%;
+    color: red;
+  }
+  50% {
+    translate: -25% 0%;
+    color: yellow;
+  }
+  66% {
+    translate: -40% -200%;
+    color: purple;
+  }
+  80% {
+    translate: -20% -350%;
+    color: white;
+  }
+  100% {
+    translate: 5%;
+    color: green;
+  }
+}
 @keyframes cambiar-colores {
   0% {
     color: #ff6666;
@@ -411,32 +456,15 @@ footer .tw {
     color: #000000;
   }
 }
-@keyframes rebote-parrafo {
+@keyframes mover-titulo-mobile {
   0% {
     translate: 0;
-  }
-  25% {
-    translate: 0 30dvh;
-  }
-  50% {
-    translate: 0 10dvh;
-  }
-  85% {
-    translate: 0 30dvh;
-  }
-  100% {
-    translate: 0;
-  }
-}
-@keyframes mover-parrafo {
-  0% {
-    translate: 0dvw;
   }
   33% {
-    translate: 2dvh;
+    translate: 20%;
   }
   66% {
-    translate: -2dvh;
+    translate: -20%;
   }
   100% {
     translate: 0;

@@ -1,9 +1,8 @@
 /*MEDIA QUERIES - DESKTOP*/
 @media screen and (min-width:768px){
     /*MEDIA QUERIES - CONTACTO*/
-    .contacto-p{
-        animation-name: rebote-parrafo;
-        animation-duration: 1.5s;
+    .titulo-interno-contacto{
+        animation-duration: 2s;
     }
 }
 
@@ -50,7 +49,7 @@
         .caja-paisaje img{
             width: 85dvw;
         }
-        /*MEDIA QUERIES - HISTORIA */
+        /*MEDIA QUERIES - SIMBOLOS */
         .contenedor-multiuso .bandera-formosa{
             width: 65dvw;
         }
@@ -77,9 +76,12 @@
         .contenedor-multiuso{
             flex-wrap: wrap;
         }
-        .contacto-p{
-            animation-name: mover-parrafo;
+        .titulo-interno-contacto{
+            margin: 1dvh;
+            padding: 0;
+            animation-name: cambiar-colores, mover-titulo-mobile;
             animation-duration: 1.5s;
+            animation-iteration-count: 2;
         }
         .contenedor-multiuso-github{
             flex-wrap: nowrap;
@@ -118,5 +120,20 @@
             flex-wrap: wrap;
             text-align: center;
         }
+    }
+}
+
+/*MEDIA QUERIES - EXCLUSIVO width:1336px ANIMACION*/
+@media screen and (width:1366px){
+    /*MEDIA QUERIES - CONTACTO*/
+    .contenedor-multiuso-contacto{
+        align-items: center;
+    }
+    .titulo-interno-contacto{
+        padding-left: 25%;
+        animation-name: mover-titulo-exclusivo;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 }
