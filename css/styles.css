@@ -6,6 +6,7 @@
 /*MAIN*/
 /*FOOTER*/
 /*PAGINA CONTACTO*/
+/*OTROS*/
 * {
   margin: 0;
   padding: 0;
@@ -279,6 +280,34 @@ footer .tw {
   position: relative;
 }
 
+/* PAGINAS ERROR */
+.body-error {
+  height: 100dvh;
+  overflow: hidden;
+  background-color: #8f0505;
+}
+
+.main-error {
+  display: flex;
+  background-color: #8f0505;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-multiuso-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #772e44;
+  border: 2px solid #2c2e2c;
+  border-radius: 8px;
+  padding: 2dvw;
+}
+.contenedor-multiuso-error p {
+  font-weight: 600;
+}
+
 /*MEDIA QUERIES - DESKTOP*/
 @media screen and (min-width: 768px) {
   /*MEDIA QUERIES - CONTACTO*/
@@ -395,7 +424,7 @@ footer .tw {
     text-align: center;
   }
 }
-/*MEDIA QUERIES - EXCLUSIVO ANIMACION*/
+/*MEDIA QUERIES - EXCLUSIVO width:1336px ANIMACION*/
 @media screen and (width: 1366px) {
   /*MEDIA QUERIES - CONTACTO*/
   .contenedor-multiuso-contacto {
@@ -407,36 +436,6 @@ footer .tw {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-  }
-}
-@keyframes mover-titulo-exclusivo {
-  0% {
-    translate: 5%;
-    color: green;
-  }
-  15% {
-    translate: 25% -200%;
-    color: blue;
-  }
-  25% {
-    translate: 10% -350%;
-    color: red;
-  }
-  50% {
-    translate: -25% 0%;
-    color: yellow;
-  }
-  66% {
-    translate: -40% -200%;
-    color: purple;
-  }
-  80% {
-    translate: -20% -350%;
-    color: white;
-  }
-  100% {
-    translate: 5%;
-    color: green;
   }
 }
 @keyframes cambiar-colores {
@@ -468,6 +467,36 @@ footer .tw {
   }
   100% {
     translate: 0;
+  }
+}
+@keyframes mover-titulo-exclusivo {
+  0% {
+    translate: 5%;
+    color: green;
+  }
+  15% {
+    translate: 25% -200%;
+    color: blue;
+  }
+  25% {
+    translate: 10% -350%;
+    color: red;
+  }
+  50% {
+    translate: -25% 0%;
+    color: yellow;
+  }
+  66% {
+    translate: -40% -200%;
+    color: purple;
+  }
+  80% {
+    translate: -20% -350%;
+    color: white;
+  }
+  100% {
+    translate: 5%;
+    color: green;
   }
 }
 

@@ -21,3 +21,7 @@ $color-sombra-input: #232423;
 $color-fondo-input: #d2d0c8;
 $color-fondo-input: #e8e4d4;
 $box-shadow-input: 0.25em 0.4em 4px;
+
+/*OTROS*/
+$color-error:#8f0505;
+$color-error-interno:mix($color-error,$color-header,70%);

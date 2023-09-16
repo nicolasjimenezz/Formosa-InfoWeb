@@ -292,5 +292,33 @@ footer{
     }
 }
 
+/* PAGINAS ERROR */
+.body-error{
+    height: 100dvh;
+    overflow: hidden;
+    background-color: $color-error;
+}
+
+.main-error{
+    display: flex;
+    background-color: $color-error;
+    height: 50%;
+    align-items: center;
+    justify-content:center;
+}
+
+.contenedor-multiuso-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-error-interno;
+    border: 2px solid $color-borde-caja;
+    border-radius: 8px;
+    padding: 2dvw;
+    p{
+        font-weight: 600;
+    }
+}
+
 @import "./partials/queries";
 @import "./partials/keyframes";
