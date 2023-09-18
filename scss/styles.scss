@@ -295,7 +295,7 @@ footer{
     }
 }
 
-/* PAGINAS ERROR */
+/* PAGINA ERROR */
 .body-error{
     height: 100dvh;
     overflow: hidden;
@@ -321,6 +321,22 @@ footer{
     p{
         font-weight: 600;
     }
+}
+
+/* PAGINA EXITO */
+.body-exito{
+    @extend .body-error;
+    background-color: $color-exito;
+}
+
+.main-exito{
+    @extend .main-error;
+    background-color: $color-exito;
+}
+
+.contenedor-multiuso-exito{
+    @extend .contenedor-multiuso-error;
+    background-color: $color-exito-interno;
 }
 
 @import "./partials/queries";

@@ -283,14 +283,14 @@ footer .tw {
   position: relative;
 }
 
-/* PAGINAS ERROR */
-.body-error {
+/* PAGINA ERROR */
+.body-error, .body-exito {
   height: 100dvh;
   overflow: hidden;
   background-color: #8f0505;
 }
 
-.main-error {
+.main-error, .main-exito {
   display: flex;
   background-color: #8f0505;
   height: 50%;
@@ -298,7 +298,7 @@ footer .tw {
   justify-content: center;
 }
 
-.contenedor-multiuso-error {
+.contenedor-multiuso-error, .contenedor-multiuso-exito {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,8 +307,21 @@ footer .tw {
   border-radius: 8px;
   padding: 2dvw;
 }
-.contenedor-multiuso-error p {
+.contenedor-multiuso-error p, .contenedor-multiuso-exito p {
   font-weight: 600;
+}
+
+/* PAGINA EXITO */
+.body-exito {
+  background-color: #169016;
+}
+
+.main-exito {
+  background-color: #169016;
+}
+
+.contenedor-multiuso-exito {
+  background-color: #2f8e8a;
 }
 
 /*MEDIA QUERIES - DESKTOP*/

@@ -1,7 +1,6 @@
 $color-letra:#000000;
 
 /*HEADER*/
-$color-header:#50acf7;
 $color-header: #408cd7;
 $color-fondo-logo:#5555bb;
 $color-borde-nav-link-personal:#45759c;
@@ -25,3 +24,5 @@ $box-shadow-input: 0.25em 0.4em 4px;
 /*OTROS*/
 $color-error:#8f0505;
 $color-error-interno:mix($color-error,$color-header,70%);
+$color-exito: #169016;
+$color-exito-interno:mix($color-exito,$color-header,40%);
