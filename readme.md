@@ -8,18 +8,21 @@ La página está codificada con:
 Fuentes utilizadas: Roboto, sans-serif
 
 Aclaraciones:
-Sólo agregué animaciones a navbar y a la página contacto porque me parecia excesivo hacerlo a todas.
-Cambié el nombre visible de la página "historia" a "símbolos". Pero veo innecesario cambiar todas las etiquetas e información invisible al usuario. Es una mala prática?
+--
 ---
 
 Ideas a futuro:
+Cambiar color-font footer por blanco
 --
 
 Dudas a resolver:
 *Usar IDs para ganarle en especificidad a algunas clases de estilos de Bootstrap estaría mal?
-*Cambié el nombre visible de la página "historia" a "símbolos". Pero veo innecesario cambiar todas las etiquetas e información invisible al usuario. Es una mala prática?
-*Tenemos que subir el scss al repo? o sólo el css que nos genera?
+Es una desventaja de usar Bootstrap
 *El hecho de que bootstrap use divs en lugar de h1,h2,h3, afecta mucho al SEO?
-*tenemos que usar git ignore para la carpeta de SCSS? o también debemos subirla a GitHub?
-*Buscar más ejemplos del lenguaje de SASS (IF, for etc)
+Modificar los divs y cambiarlos por etiquetas semánticas en lo posible
+*Tenemos que subir el scss al repo? o sólo el css que nos genera? Usar git ignore?
+Podemos sólo subir el css
+
+*Qué tiene el package.json?
 *Por qué una imagen .webp me terminó pesando más que una .png? la convertí mal?
+*Cuánto tiempo tarda en hacer efecto los cambios en InfinityFree?
