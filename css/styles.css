@@ -12,6 +12,7 @@
   padding: 0;
   color: #000000;
   font-family: Roboto-light;
+  font-size: 1.05em;
 }
 
 header {
@@ -29,15 +30,17 @@ header .pentagon {
   width: 3.38em;
   background-color: #5555bb;
   clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+  box-shadow: #ff0000 #00ff00;
 }
 header .logo {
-  width: 3em;
+  width: 3.1em;
   height: 3em;
   clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%); /*Rojo verde amarillo azul rosa */
-  margin: 2px 0px 0px 3px;
+  margin: 2px 0px 3px 3px;
 }
 header h1 {
   font-size: 3em;
+  text-shadow: #ffffff 0px 0 8px;
 }
 header .titulo-mobile-invisible, header .titulo-mobile-actual {
   display: none;
@@ -116,13 +119,13 @@ main figcaption {
   padding: 0.1em 0.3em;
   font-size: 0.9em;
   border-radius: 5px;
-  background-image: radial-gradient(#427cbc, #446697);
+  background-image: radial-gradient(#408cd7, #628088);
 }
 main #carouselWithCaptions {
   justify-self: center;
   width: 65%;
-  border: 2px solid #2c2e2c;
-  border-radius: 4px;
+  border: 3px solid #2c2e2c;
+  border-radius: 5px;
 }
 main #carouselWithCaptions li {
   list-style: none;
@@ -135,7 +138,7 @@ main .titulo-interno {
 main .contenedor-multiuso, main .contenedor-multiuso-github {
   display: flex;
   justify-content: center;
-  background-image: radial-gradient(#427cbc, #446697);
+  background-image: radial-gradient(#408cd7, #628088);
   border: 2px solid #2c2e2c;
   border-radius: 8px;
   margin-bottom: 2.5dvh;
@@ -240,7 +243,7 @@ main .contenedor-multiuso-github .github-logo {
 }
 
 footer {
-  background-color: #4E7B99;
+  background-color: #2b4a69;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -248,6 +251,7 @@ footer {
 }
 footer h4 {
   font-size: 1em;
+  color: #d2d0c8;
 }
 footer .footer-ubicacion {
   font-weight: bold;
@@ -270,7 +274,7 @@ footer .social-media {
   height: 48px;
   width: 48px;
   border-radius: 48px;
-  border: 2px solid #333333;
+  border: 2px solid #2c2e2c;
   margin-right: 1dvw;
 }
 footer .social-media:hover {
@@ -388,6 +392,9 @@ footer .tw {
     width: 350px;
     height: 300px;
   }
+  main .contenedor-multiuso-gastronomia {
+    text-align: center;
+  }
   main .foto-gastronomia-2 {
     order: 1;
   }
@@ -448,7 +455,21 @@ footer .tw {
   }
   .titulo-interno-contacto {
     padding-left: 25%;
-    animation-name: mover-titulo-exclusivo;
+    animation-name: mover-titulo-exclusivo-1336px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+/*MEDIA QUERIES - EXCLUSIVO width:1920px ANIMACION*/
+@media screen and (width: 1920px) {
+  /*MEDIA QUERIES - CONTACTO*/
+  .contenedor-multiuso-contacto {
+    align-items: center;
+  }
+  .titulo-interno-contacto {
+    padding-left: 25%;
+    animation-name: mover-titulo-exclusivo-1920px;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -485,13 +506,12 @@ footer .tw {
     translate: 0;
   }
 }
-@keyframes mover-titulo-exclusivo {
+@keyframes mover-titulo-exclusivo-1336px {
   0% {
-    translate: 5%;
     color: green;
   }
   15% {
-    translate: 25% -200%;
+    translate: 20% -200%;
     color: blue;
   }
   25% {
@@ -499,11 +519,11 @@ footer .tw {
     color: red;
   }
   50% {
-    translate: -25% 0%;
+    translate: -20% 0%;
     color: yellow;
   }
   66% {
-    translate: -40% -200%;
+    translate: -35% -200%;
     color: purple;
   }
   80% {
@@ -511,7 +531,34 @@ footer .tw {
     color: white;
   }
   100% {
-    translate: 5%;
+    color: green;
+  }
+}
+@keyframes mover-titulo-exclusivo-1920px {
+  0% {
+    color: green;
+  }
+  17% {
+    translate: 25% -200%;
+    color: blue;
+  }
+  30% {
+    translate: 10% -350%;
+    color: red;
+  }
+  58% {
+    translate: -30% 0%;
+    color: yellow;
+  }
+  69% {
+    translate: -45% -150%;
+    color: purple;
+  }
+  82% {
+    translate: -25% -350%;
+    color: white;
+  }
+  100% {
     color: green;
   }
 }

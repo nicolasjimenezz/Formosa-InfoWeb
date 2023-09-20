@@ -31,13 +31,12 @@
     }
 }
 
-@keyframes mover-titulo-exclusivo{ //Animación exclusiva de width:1366px
+@keyframes mover-titulo-exclusivo-1336px{ //Animación exclusiva de width:1366px
     0%{
-        translate: 5%;
         color: green;
     }
     15%{
-        translate: 25% -200%;
+        translate: 20% -200%;
         color: blue;
     }
     25%{
@@ -45,11 +44,11 @@
         color: red;
     }
     50%{
-        translate: -25% 0%;
+        translate: -20% 0%;
         color: yellow;
     }
     66%{
-        translate: -40% -200%;
+        translate: -35% -200%;
         color: purple;
     }
     80%{
@@ -57,7 +56,35 @@
         color: white;
     }
     100%{
-        translate: 5%;
+        color: green;
+    }
+}
+
+@keyframes mover-titulo-exclusivo-1920px{ //Animación exclusiva de width:1920px
+    0%{
+        color: green;
+    }
+    17%{
+        translate: 25% -200%;
+        color: blue;
+    }
+    30%{
+        translate: 10% -350%;
+        color: red;
+    }
+    58%{
+        translate: -30% 0%;
+        color: yellow;
+    }
+    69%{
+        translate: -45% -150%;
+        color: purple;
+    }
+    82%{
+        translate: -25% -350%;
+        color: white;
+    }
+    100%{
         color: green;
     }
 }

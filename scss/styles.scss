@@ -10,6 +10,7 @@
     padding: 0;
     color: $color-letra;
     font-family: Roboto-light;
+    font-size: 1.05em;
 }
 
 header{
@@ -26,15 +27,17 @@ header{
         width: 3.38em;
         background-color: $color-fondo-logo;
         clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+        box-shadow: #ff0000 #00ff00;
     }
     .logo {
-        width: 3em;
+        width: 3.1em;
         height: 3em;
         clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%); /*Rojo verde amarillo azul rosa */
-        margin: 2px 0px 0px 3px
+        margin: 2px 0px 3px 3px;
     }
     h1{
         font-size: 3em;
+        text-shadow: $color-brillo-h1 0px 0 8px;
     }
     .titulo-mobile-invisible, .titulo-mobile-actual{
         display: none;
@@ -117,8 +120,8 @@ main{
     #carouselWithCaptions{
         justify-self: center;
         width: 65%;
-        border: 2px solid $color-borde-caja;
-        border-radius: 4px;
+        border: 3px solid $color-borde-caja;
+        border-radius: 5px;
         li{
             list-style: none; //Para borrar los números por defecto en el carousel
         }
@@ -259,6 +262,7 @@ footer{
     height: 15dvh;
     h4{
         font-size: 1em;
+        color:$color-footer-fuente;
     }
     .footer-ubicacion{
         font-weight: bold;

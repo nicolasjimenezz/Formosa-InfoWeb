@@ -66,6 +66,9 @@
             height: 300px;
         }
         /*MEDIA QUERIES - GASTRONOMIA*/
+        .contenedor-multiuso-gastronomia{
+            text-align: center;
+        }
         .foto-gastronomia-2{
             order: 1;
         }
@@ -131,7 +134,22 @@
     }
     .titulo-interno-contacto{
         padding-left: 25%;
-        animation-name: mover-titulo-exclusivo;
+        animation-name: mover-titulo-exclusivo-1336px;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+/*MEDIA QUERIES - EXCLUSIVO width:1920px ANIMACION*/
+@media screen and (width:1920px){
+    /*MEDIA QUERIES - CONTACTO*/
+    .contenedor-multiuso-contacto{
+        align-items: center;
+    }
+    .titulo-interno-contacto{
+        padding-left: 25%;
+        animation-name: mover-titulo-exclusivo-1920px;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
