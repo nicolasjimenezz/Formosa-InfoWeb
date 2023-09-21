@@ -28,9 +28,8 @@ header .pentagon {
   position: absolute;
   height: 3.3em;
   width: 3.38em;
-  background-color: #5555bb;
+  background-color: #555599;
   clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
-  box-shadow: #ff0000 #00ff00;
 }
 header .logo {
   width: 3.1em;
@@ -206,6 +205,7 @@ main .contacto-input {
   box-shadow: 0.25em 0.4em 4px #232423;
   border: 2px solid #2c2e2c;
   border-radius: 6px;
+  padding-left: 5px;
 }
 main .contacto-input:focus {
   background-color: #e8e4d4;
@@ -249,9 +249,9 @@ footer {
   justify-content: space-around;
   height: 15dvh;
 }
-footer h4 {
+footer h3 {
   font-size: 1em;
-  color: #d2d0c8;
+  color: #e2e0e8;
 }
 footer .footer-ubicacion {
   font-weight: bold;
@@ -336,7 +336,7 @@ footer .tw {
   }
 }
 /*MEDIA QUERIES - MOBILE*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   header nav .titulo-mobile-invisible, header nav .titulo-mobile-actual {
     display: block;
   }
@@ -440,7 +440,7 @@ footer .tw {
     font-size: 1.5em;
   }
   main .input-mensaje {
-    max-height: 12dvh;
+    max-height: 40dvh;
   }
   main .contenedor-multiuso-github {
     flex-wrap: wrap;

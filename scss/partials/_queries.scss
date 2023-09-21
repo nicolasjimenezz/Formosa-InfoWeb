@@ -7,7 +7,7 @@
 }
 
 /*MEDIA QUERIES - MOBILE*/
-@media screen and (max-width:767px){
+@media screen and (max-width:1200px){
     header{
         nav{
             .titulo-mobile-invisible, .titulo-mobile-actual{
@@ -117,7 +117,7 @@
             font-size: 1.5em;
         }
         .input-mensaje{
-            max-height: 12dvh;
+            max-height: 40dvh;
         }
         .contenedor-multiuso-github{
             flex-wrap: wrap;
