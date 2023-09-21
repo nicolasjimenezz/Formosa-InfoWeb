@@ -7,7 +7,3 @@ La página está codificada con:
 *Librerias: Bootstrap, Animate.css  
 *Otras tecnologías utilizadas: Git, GitHub  
 Fuentes utilizadas: Roboto, sans-serif
-
-Ideas a futuro: -
-
-Dudas a resolver: -
