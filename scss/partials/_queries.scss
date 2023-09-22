@@ -41,10 +41,10 @@
             grid-template-columns: 1fr;
         }
         .caja-paisaje{
+            align-items: center;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            align-items: center;
         }
         .caja-paisaje img{
             width: 85dvw;
@@ -62,8 +62,8 @@
             text-align: center;
         }
         iframe{
-            width: 350px;
             height: 300px;
+            width: 350px;
         }
         /*MEDIA QUERIES - GASTRONOMIA*/
         .contenedor-multiuso-gastronomia{
@@ -80,11 +80,11 @@
             flex-wrap: wrap;
         }
         .titulo-interno-contacto{
-            margin: 1dvh;
-            padding: 0;
-            animation-name: cambiar-colores, mover-titulo-mobile;
+            animation-name: cambiar-colores;
             animation-duration: 1.5s;
             animation-iteration-count: 2;
+            margin: 1dvh;
+            padding: 0;
         }
         .contenedor-multiuso-github{
             flex-wrap: nowrap;
@@ -109,8 +109,8 @@
         }
         /* MEDIA QUERIES - MAPA*/
         iframe{
-            width: 240px;
             height: 240px;
+            width: 240px;
         }
         /*MEDIA QUERIES - CONTACTO*/
         .titulo-interno-contacto{
@@ -123,35 +123,5 @@
             flex-wrap: wrap;
             text-align: center;
         }
-    }
-}
-
-/*MEDIA QUERIES - EXCLUSIVO width:1336px ANIMACION*/
-@media screen and (width:1366px){
-    /*MEDIA QUERIES - CONTACTO*/
-    .contenedor-multiuso-contacto{
-        align-items: center;
-    }
-    .titulo-interno-contacto{
-        padding-left: 25%;
-        animation-name: mover-titulo-exclusivo-1336px;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-}
-
-/*MEDIA QUERIES - EXCLUSIVO width:1920px ANIMACION*/
-@media screen and (width:1920px){
-    /*MEDIA QUERIES - CONTACTO*/
-    .contenedor-multiuso-contacto{
-        align-items: center;
-    }
-    .titulo-interno-contacto{
-        padding-left: 25%;
-        animation-name: mover-titulo-exclusivo-1920px;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
     }
 }

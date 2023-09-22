@@ -8,11 +8,11 @@
 /*PAGINA CONTACTO*/
 /*OTROS*/
 * {
-  margin: 0;
-  padding: 0;
   color: #000000;
   font-family: Roboto-light;
   font-size: 1.05em;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -21,21 +21,21 @@ header {
   /* NAV */
 }
 header .nav-titulo {
-  justify-self: center;
   align-items: center;
+  justify-self: center;
 }
 header .pentagon {
-  position: absolute;
-  height: 3.3em;
-  width: 3.38em;
   background-color: #555599;
   clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%);
+  height: 3.3em;
+  position: absolute;
+  width: 3.38em;
 }
 header .logo {
-  width: 3.1em;
-  height: 3em;
   clip-path: polygon(50% 100%, 90% 82%, 75% 5%, 25% 5%, 10% 82%); /*Rojo verde amarillo azul rosa */
+  height: 3em;
   margin: 2px 0px 3px 3px;
+  width: 3.1em;
 }
 header h1 {
   font-size: 3em;
@@ -58,18 +58,18 @@ header nav .navbar-toggler-personal {
   margin-bottom: 1dvh;
 }
 header nav .navbar-nav-personal {
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
 }
 header nav .nav-link-personal {
-  width: 20%;
   border: 1px solid #45759c;
   text-align: center;
+  width: 20%;
 }
 header nav .activo {
-  font-weight: 700;
   background-color: #45557c;
   border-bottom: none;
+  font-weight: 700;
 }
 header nav .no-activo {
   background-image: radial-gradient(circle, #408cd7 0%, #80bcdc 100%);
@@ -77,8 +77,8 @@ header nav .no-activo {
   background-size: 500% 500%;
 }
 header nav .no-activo:hover {
-  font-weight: 500;
   background-size: 50% 50%;
+  font-weight: 500;
   transform: scale(1.08);
   transition: all 0.35s;
 }
@@ -87,8 +87,8 @@ header nav .no-activo:hover {
 main {
   background-color: #45557c;
   display: grid;
-  padding: 2.5vh;
   justify-items: center;
+  padding: 2.5vh;
   /* INDEX-SIMBOLOS-MAPA-GASTRONOMIA-CONTACTO */
   /*PAGINA SIMBOLOS */
   /* PAGINA MAPA */
@@ -99,87 +99,87 @@ main .galeria-mobile {
   display: none;
 }
 main .caja-paisaje {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 main .caja-paisaje img {
-  width: 45dvw;
   align-items: center;
   align-content: center;
   border: 2px solid #2c2e2c;
   border-radius: 8px;
+  width: 45dvw;
 }
 main figcaption {
+  background-image: radial-gradient(#408cd7, #628088);
   border: 2px solid #28485d;
+  border-radius: 5px;
+  font-size: 0.9em;
   margin-top: 0.7dvh;
   padding: 0.1em 0.3em;
-  font-size: 0.9em;
-  border-radius: 5px;
-  background-image: radial-gradient(#408cd7, #628088);
 }
 main #carouselWithCaptions {
-  justify-self: center;
-  width: 65%;
   border: 3px solid #2c2e2c;
   border-radius: 5px;
+  justify-self: center;
+  width: 65%;
 }
 main #carouselWithCaptions li {
   list-style: none;
 }
 main .titulo-interno {
-  font-size: 2.5em;
   font-family: sans-serif;
+  font-size: 2.5em;
   text-align: center;
 }
 main .contenedor-multiuso, main .contenedor-multiuso-github {
-  display: flex;
-  justify-content: center;
   background-image: radial-gradient(#408cd7, #628088);
   border: 2px solid #2c2e2c;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2.5dvh;
   padding: 0.8em;
   width: 85%;
 }
 main .contenedor-multiuso-simbolos {
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 main .contenedor-multiuso-simbolos img {
-  width: 35dvw;
+  background-image: radial-gradient(#888888, #444444);
   border: 2px solid #2c2e2c;
   border-radius: 6px;
-  background-image: radial-gradient(#888888, #444444);
+  width: 35dvw;
 }
 main .contenedor-multiuso-mapa img {
-  width: 35dvw;
-  max-height: 35dvw;
+  background-color: #606060;
   border: 2px solid #2c2e2c;
   border-radius: 6px;
-  background-color: #606060;
+  max-height: 35dvw;
+  width: 35dvw;
 }
 main .mapa-texto {
-  padding: 0 2em;
   font-size: 1em;
+  padding: 0 2em;
 }
 main .google-map {
-  display: flex;
   border: 1px solid #2c2e2c;
   border-radius: 4px;
-  padding: 1px;
-  margin-bottom: 2.5dvh;
+  display: flex;
   justify-content: center;
+  margin-bottom: 2.5dvh;
+  padding: 1px;
 }
 main .contenedor-multiuso-gastronomia img {
-  width: 35dvw;
-  max-height: 35dvw;
+  background-image: radial-gradient(#888888, #444444);
   border: 2px solid #2c2e2c;
   border-radius: 6px;
-  background-image: radial-gradient(#888888, #444444);
+  max-height: 35dvw;
+  width: 35dvw;
 }
 main .titulo-interno-contacto {
   margin-top: 5dvh;
@@ -193,19 +193,19 @@ main .contenedor-multiuso div, main .contenedor-multiuso-github div, main .conte
   width: 100%;
 }
 main .contacto-container-input {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
   padding: 0.5em 0;
 }
 main .contacto-input {
   display: block;
-  width: 80%;
-  text-align: left;
-  box-shadow: 0.25em 0.4em 4px #232423;
   border: 2px solid #2c2e2c;
   border-radius: 6px;
+  box-shadow: 0.25em 0.4em 4px #232423;
   padding-left: 5px;
+  text-align: left;
+  width: 80%;
 }
 main .contacto-input:focus {
   background-color: #e8e4d4;
@@ -214,27 +214,27 @@ main .input-enviar {
   margin: 0.5em 0;
 }
 main .input-enviar .contacto-boton-enviar {
-  box-shadow: 0.25em 0.4em 4px #232423;
   border: 2px solid #2c2e2c;
   border-radius: 6px;
+  box-shadow: 0.25em 0.4em 4px #232423;
   padding: 0 0.2dvw;
 }
 main .input-enviar .contacto-boton-enviar:active {
   box-shadow: 0.125em 0.2em 2px 0 #232423;
 }
 main .contenedor-multiuso-github {
-  width: 40dvw;
   align-items: center;
   text-align: center;
+  width: 40dvw;
 }
 main .contenedor-multiuso-github p {
-  padding: 0 2em;
   font-size: 1em;
+  padding: 0 2em;
   text-align: center;
 }
 main .contenedor-multiuso-github .github-logo {
-  width: 10dvw;
   max-width: 100px;
+  width: 10dvw;
 }
 
 /* FOOTER */
@@ -250,32 +250,32 @@ footer {
   height: 15dvh;
 }
 footer h3 {
-  font-size: 1em;
   color: #e2e0e8;
+  font-size: 1em;
 }
 footer .footer-ubicacion {
   font-weight: bold;
 }
 footer .footer-titles {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 footer .footer-links {
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
 }
 footer .social-media {
+  border: 2px solid #2c2e2c;
+  border-radius: 48px;
   display: flex;
   height: 48px;
-  width: 48px;
-  border-radius: 48px;
-  border: 2px solid #2c2e2c;
   margin-right: 1dvw;
+  width: 48px;
 }
 footer .social-media:hover {
   filter: brightness(1.25);
@@ -289,26 +289,26 @@ footer .tw {
 
 /* PAGINA ERROR */
 .body-error, .body-exito {
+  background-color: #8f0505;
   height: 100dvh;
   overflow: hidden;
-  background-color: #8f0505;
 }
 
 .main-error, .main-exito {
-  display: flex;
-  background-color: #8f0505;
-  height: 50%;
   align-items: center;
+  background-color: #8f0505;
+  display: flex;
+  height: 50%;
   justify-content: center;
 }
 
 .contenedor-multiuso-error, .contenedor-multiuso-exito {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #772e44;
   border: 2px solid #2c2e2c;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
   padding: 2dvw;
 }
 .contenedor-multiuso-error p, .contenedor-multiuso-exito p {
@@ -370,10 +370,10 @@ footer .tw {
     grid-template-columns: 1fr;
   }
   main .caja-paisaje {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
   }
   main .caja-paisaje img {
     width: 85dvw;
@@ -389,8 +389,8 @@ footer .tw {
     text-align: center;
   }
   main iframe {
-    width: 350px;
     height: 300px;
+    width: 350px;
   }
   main .contenedor-multiuso-gastronomia {
     text-align: center;
@@ -405,11 +405,11 @@ footer .tw {
     flex-wrap: wrap;
   }
   main .titulo-interno-contacto {
-    margin: 1dvh;
-    padding: 0;
-    animation-name: cambiar-colores, mover-titulo-mobile;
+    animation-name: cambiar-colores;
     animation-duration: 1.5s;
     animation-iteration-count: 2;
+    margin: 1dvh;
+    padding: 0;
   }
   main .contenedor-multiuso-github {
     flex-wrap: nowrap;
@@ -433,8 +433,8 @@ footer .tw {
     font-size: 0.8em;
   }
   main iframe {
-    width: 240px;
     height: 240px;
+    width: 240px;
   }
   main .titulo-interno-contacto {
     font-size: 1.5em;
@@ -445,34 +445,6 @@ footer .tw {
   main .contenedor-multiuso-github {
     flex-wrap: wrap;
     text-align: center;
-  }
-}
-/*MEDIA QUERIES - EXCLUSIVO width:1336px ANIMACION*/
-@media screen and (width: 1366px) {
-  /*MEDIA QUERIES - CONTACTO*/
-  .contenedor-multiuso-contacto {
-    align-items: center;
-  }
-  .titulo-interno-contacto {
-    padding-left: 25%;
-    animation-name: mover-titulo-exclusivo-1336px;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-}
-/*MEDIA QUERIES - EXCLUSIVO width:1920px ANIMACION*/
-@media screen and (width: 1920px) {
-  /*MEDIA QUERIES - CONTACTO*/
-  .contenedor-multiuso-contacto {
-    align-items: center;
-  }
-  .titulo-interno-contacto {
-    padding-left: 25%;
-    animation-name: mover-titulo-exclusivo-1920px;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
   }
 }
 @keyframes cambiar-colores {
@@ -490,76 +462,6 @@ footer .tw {
   }
   100% {
     color: #000000;
-  }
-}
-@keyframes mover-titulo-mobile {
-  0% {
-    translate: 0;
-  }
-  33% {
-    translate: 20%;
-  }
-  66% {
-    translate: -20%;
-  }
-  100% {
-    translate: 0;
-  }
-}
-@keyframes mover-titulo-exclusivo-1336px {
-  0% {
-    color: green;
-  }
-  15% {
-    translate: 20% -200%;
-    color: blue;
-  }
-  25% {
-    translate: 10% -350%;
-    color: red;
-  }
-  50% {
-    translate: -20% 0%;
-    color: yellow;
-  }
-  66% {
-    translate: -35% -200%;
-    color: purple;
-  }
-  80% {
-    translate: -20% -350%;
-    color: white;
-  }
-  100% {
-    color: green;
-  }
-}
-@keyframes mover-titulo-exclusivo-1920px {
-  0% {
-    color: green;
-  }
-  17% {
-    translate: 25% -200%;
-    color: blue;
-  }
-  30% {
-    translate: 10% -350%;
-    color: red;
-  }
-  58% {
-    translate: -30% 0%;
-    color: yellow;
-  }
-  69% {
-    translate: -45% -150%;
-    color: purple;
-  }
-  82% {
-    translate: -25% -350%;
-    color: white;
-  }
-  100% {
-    color: green;
   }
 }
 
