@@ -159,7 +159,6 @@ main .contenedor-multiuso-mapa img {
   background-color: #606060;
   border: 2px solid #2c2e2c;
   border-radius: 6px;
-  max-height: 35dvw;
   width: 35dvw;
 }
 main .mapa-texto {
@@ -422,6 +421,18 @@ footer .tw {
   }
   footer .footer-links {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    /* MEDIA QUERIES - MAPA*/
+    /* MEDIA QUERIES - GASTRONOMIA*/
+  }
+  main .contenedor-multiuso-mapa img {
+    width: 55dvw;
+  }
+  main .contenedor-multiuso-gastronomia img {
+    width: 55dvw;
   }
 }
 @media screen and (max-width: 480px) {

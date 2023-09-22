@@ -102,6 +102,23 @@
     }
 }
 
+@media screen and (max-width:768px){
+    main{
+        /* MEDIA QUERIES - MAPA*/
+        .contenedor-multiuso-mapa{
+            img{
+                width: 55dvw;
+            }
+        }
+        /* MEDIA QUERIES - GASTRONOMIA*/
+        .contenedor-multiuso-gastronomia{
+            img{
+                width: 55dvw;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:480px){
     main{
         .contenedor-multiuso{
